@@ -1,5 +1,7 @@
 # Curso de Python para Alumnos de TIC II
 
+https://citius70.github.io/curso_python_tic2/
+
 ¡Bienvenidos al curso de Python para TIC II! Este curso está diseñado para introducir a los estudiantes en la programación utilizando el lenguaje Python. A lo largo del curso, aprenderemos conceptos fundamentales de programación, así como técnicas avanzadas que les ayudarán a desarrollar proyectos interesantes.
 
 ## Objetivos del Curso
