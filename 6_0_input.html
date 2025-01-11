@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>La función input() &#8212; Python para TIC II</title>
+    <title>Función input() &#8212; Python para TIC II</title>
   
   
   
@@ -30,13 +30,22 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=f0c89327" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=fb9458d3" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=f0c89327" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/theme.css?v=a243ae73" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -61,6 +70,21 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '6_0_input';</script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/copybutton_funcs.js?v=776a791e"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/language_data.js?v=d4673a71"></script>
+    <script src="_static/searchtools.js?v=63a53a7d"></script>
+    <script src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/scripts/bootstrap.js?v=7583a70d"></script>
+    <script src="_static/scripts/fontawesome.js?v=9b125980"></script>
+    <script src="_static/scripts/pydata-sphinx-theme.js?v=a1eb5d9f"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Ejercicios sobre la función input()" href="6_1_input_ejercicios.html" />
@@ -168,9 +192,9 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Python</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Introducción</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_0_introduccion.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_0_introduccion.html">¿Qué es Python?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Variables</span></p>
 <ul class="nav bd-sidenav">
@@ -179,7 +203,7 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="3_0_matematicas.html">Operaciones matemáticas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="3_1_matematicas_ejercicios.html">Ejercicios de Operaciones Matemáticas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_1_matematicas_ejercicios.html">Ejercicios de operaciones matemáticas</a></li>
 </ul>
 </details></li>
 </ul>
@@ -193,7 +217,7 @@
 <li class="toctree-l2"><a class="reference internal" href="5_1_print_ejercicios.html">Ejercicios sobre la función print()</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">La función input()</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Función input()</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="6_1_input_ejercicios.html">Ejercicios sobre la función input()</a></li>
 </ul>
 </details></li>
@@ -285,7 +309,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/citius70/pythonTICII/blob/main/mybookname/6_0_input.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2/blob/gb-pages/6_0_input.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -316,7 +340,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/pythonTICII" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -333,7 +357,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/pythonTICII/edit/main/mybookname/6_0_input.ipynb" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2/edit/gb-pages/6_0_input.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -350,7 +374,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/pythonTICII/issues/new?title=Issue%20on%20page%20%2F6_0_input.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2/issues/new?title=Issue%20on%20page%20%2F6_0_input.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -454,7 +478,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>La función input()</h1>
+    <h1>Función input()</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -468,13 +492,14 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="la-funcion-input">
-<h1>La función input()<a class="headerlink" href="#la-funcion-input" title="Link to this heading">#</a></h1>
-<p>La función <code class="docutils literal notranslate"><span class="pre">input</span></code> en Python es una función incorporada que se utiliza para leer una línea de texto del ingreso del usuario (típicamente desde el teclado). Esta función <strong>espera que el usuario escriba alguna entrada y presione enter</strong>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="funcion-input">
+<h1>Función input()<a class="headerlink" href="#funcion-input" title="Link to this heading">#</a></h1>
+<p>La función <code class="docutils literal notranslate"><span class="pre">input()</span></code> en Python es una herramienta clave para la <strong>interacción con el usuario</strong>, permitiendo que los programas <strong>reciban datos directamente desde el usuario a través de la entrada estándar, como el teclado</strong>. Esta función solicita al usuario que introduzca información, mostrando un mensaje opcional en la pantalla que invita a la persona a escribir algo.</p>
+<p>El valor que devuelve <code class="docutils literal notranslate"><span class="pre">input()</span></code> es frecuentemente asignado a una <code class="docutils literal notranslate"><span class="pre">variable</span></code> para ser utilizado más adelante en el programa. Por ejemplo, name = input(’¿Cuál es tu nombre?\n’) muestra la pregunta al usuario y guarda la respuesta en la variable name</p>
 <p>He aquí un ejemplo simple:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre? &quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre?&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -483,7 +508,7 @@
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre? &quot;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre?&quot;</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 
 <span class="nn">File ~\anaconda3\envs\ambiente_1\Lib\site-packages\ipykernel\kernelbase.py:1281,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
@@ -504,7 +529,12 @@
 </div>
 <p>En este código, <code class="docutils literal notranslate"><span class="pre">input(&quot;¿Cuál</span> <span class="pre">es</span> <span class="pre">tu</span> <span class="pre">nombre?</span> <span class="pre">&quot;)</span></code> imprime la cadena “¿Cuál es tu nombre? “ en la consola y luego espera que el usuario escriba algo. Lo que el usuario escriba es devuelto por la función input como una cadena, y en este caso se está almacenando en la variable <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
 <p>Después de que el usuario escribe su nombre y presiona enter, el programa continúa con la siguiente línea, que imprime el valor de la variable <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
-<p><strong>¡Importante!</strong> Es importante destacar que la <strong>función input siempre devuelve una cadena de texto</strong>. Si deseas usar la entrada como un entero o un flotante (por ejemplo, si estás pidiendo al usuario que introduzca un número), necesitarás convertir el valor devuelto al tipo deseado utilizando la función <code class="docutils literal notranslate"><span class="pre">int()</span></code> o <code class="docutils literal notranslate"><span class="pre">float()</span></code>, así:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Atención
+Es importante destacar que la función <code class="docutils literal notranslate"><span class="pre">input()</span></code> siempre devuelve una <strong>cadena de texto</strong>…</p>
+</div>
+<p>…si deseas usar la entrada como un <strong>entero</strong> o un <strong>flotante</strong> (por ejemplo, si estás pidiendo al usuario que introduzca su edad), necesitarás convertir el valor devuelto al tipo deseado utilizando la función <code class="docutils literal notranslate"><span class="pre">int()</span></code> o <code class="docutils literal notranslate"><span class="pre">float()</span></code>, así:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuántos años tienes? &quot;</span><span class="p">))</span>
