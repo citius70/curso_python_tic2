@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Ejercicios sobre la función print() &#8212; Python para TIC II</title>
+    <title>Ejercicios sobre la estructura if…elif…else &#8212; Python para TIC II</title>
   
   
   
@@ -69,7 +69,7 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '5_1_print_ejercicios';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '9_1_ejerc';</script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/copybutton_funcs.js?v=776a791e"></script>
@@ -87,8 +87,8 @@
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Función input()" href="6_0_input.html" />
-    <link rel="prev" title="Función print()" href="5_0_print.html" />
+    <link rel="next" title="Bucles" href="10_0_bucles.html" />
+    <link rel="prev" title="Estructuras condicionales: if, elif y else" href="9_0_if.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -208,13 +208,13 @@
 </details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Funciones básicas</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="4_0_comentarios.html">Comentarios</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="4_1_comentarios_ejercicios.html">Ejercicios sobre comentarios</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="5_0_print.html">Función print()</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Ejercicios sobre la función print()</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="5_0_print.html">Función print()</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_1_print_ejercicios.html">Ejercicios sobre la función print()</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="6_0_input.html">Función input()</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -227,7 +227,7 @@
 </details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Estructuras de control</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="8_0_estructurascontrol.html">Introducción a las estructuras de control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9_0_if.html">Estructuras condicionales: if, elif y else</a></li>
 
@@ -309,7 +309,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2/blob/gb-pages/5_1_print_ejercicios.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2/blob/gb-pages/9_1_ejerc.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +357,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2/edit/gb-pages/5_1_print_ejercicios.ipynb" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2/edit/gb-pages/9_1_ejerc.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -374,7 +374,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2/issues/new?title=Issue%20on%20page%20%2F5_1_print_ejercicios.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2/issues/new?title=Issue%20on%20page%20%2F9_1_ejerc.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -404,7 +404,7 @@
       
       
       
-      <li><a href="_sources/5_1_print_ejercicios.ipynb" target="_blank"
+      <li><a href="_sources/9_1_ejerc.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -480,7 +480,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Ejercicios sobre la función print()</h1>
+    <h1>Ejercicios sobre la estructura if…elif…else</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -490,11 +490,11 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1-imprimir-un-mensaje-simple">Ejercicio 1: Imprimir un mensaje simple</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2-imprimir-multiples-valores">Ejercicio 2: Imprimir múltiples valores</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3-imprimir-con-formato">Ejercicio 3: Imprimir con formato</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-imprimir-en-varias-lineas">Ejercicio 4: Imprimir en varias líneas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5-imprimir-listas">Ejercicio 5: Imprimir listas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto-verificacion-de-mayoria-de-edad">Ejercicio resuelto: Verificación de mayoría de edad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1-calificacion">Ejercicio 1: Calificación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2-numero-par-o-impar">Ejercicio 2: Número par o impar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-comparacion-de-numeros">Ejercicio 4: Comparación de números</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5-clasificacion-de-edad">Ejercicio 5: Clasificación de edad</a></li>
 </ul>
             </nav>
         </div>
@@ -506,72 +506,103 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="ejercicios-sobre-la-funcion-print">
-<h1>Ejercicios sobre la función print()<a class="headerlink" href="#ejercicios-sobre-la-funcion-print" title="Link to this heading">#</a></h1>
-<p>En este notebook, practicarás el uso de la función <code class="docutils literal notranslate"><span class="pre">print()</span></code> en Python. La función <code class="docutils literal notranslate"><span class="pre">print()</span></code> se utiliza para mostrar información en la consola.</p>
-<section id="ejercicio-1-imprimir-un-mensaje-simple">
-<h2>Ejercicio 1: Imprimir un mensaje simple<a class="headerlink" href="#ejercicio-1-imprimir-un-mensaje-simple" title="Link to this heading">#</a></h2>
-<p>Usa la función <code class="docutils literal notranslate"><span class="pre">print()</span></code> para mostrar el mensaje <strong>“¡Hola, mundo!”</strong> en la consola.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="ejercicios-sobre-la-estructura-if-elif-else">
+<h1>Ejercicios sobre la estructura if…elif…else<a class="headerlink" href="#ejercicios-sobre-la-estructura-if-elif-else" title="Link to this heading">#</a></h1>
+<section id="ejercicio-resuelto-verificacion-de-mayoria-de-edad">
+<h2>Ejercicio resuelto: Verificación de mayoría de edad<a class="headerlink" href="#ejercicio-resuelto-verificacion-de-mayoria-de-edad" title="Link to this heading">#</a></h2>
+<p>Programa que pida al usuario su edad y verifique si es mayor de edad (18 años o más).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escribe el código aquí</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar la edad del usuario</span>
+<span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu edad? &quot;</span><span class="p">))</span>
+
+<span class="c1"># Verificar si es mayor de edad</span>
+<span class="k">if</span> <span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Puedes votar, eres mayor de edad.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No puedes votar, eres menor de edad.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Solicitar la edad del usuario</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu edad? &quot;</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Verificar si es mayor de edad</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="k">if</span> <span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+
+<span class="nn">File ~\anaconda3\envs\ambiente_1\Lib\site-packages\ipykernel\kernelbase.py:1281,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1279</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allow_stdin</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1280</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1281</span>     <span class="k">raise</span> <span class="n">StdinNotImplementedError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1282</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_input_request</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1283</span>     <span class="nb">str</span><span class="p">(</span><span class="n">prompt</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1284</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_parent_ident</span><span class="p">[</span><span class="s2">&quot;shell&quot;</span><span class="p">],</span>
+<span class="g g-Whitespace">   </span><span class="mi">1285</span>     <span class="bp">self</span><span class="o">.</span><span class="n">get_parent</span><span class="p">(</span><span class="s2">&quot;shell&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1286</span>     <span class="n">password</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1287</span> <span class="p">)</span>
+
+<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="ejercicio-2-imprimir-multiples-valores">
-<h2>Ejercicio 2: Imprimir múltiples valores<a class="headerlink" href="#ejercicio-2-imprimir-multiples-valores" title="Link to this heading">#</a></h2>
-<p>Usa la función <code class="docutils literal notranslate"><span class="pre">print()</span></code> para mostrar tu <strong>nombre</strong> y tu <strong>edad</strong> en la consola. Por ejemplo, “Mi nombre es Juan y tengo 25 años”.</p>
+<section id="ejercicio-1-calificacion">
+<h2>Ejercicio 1: Calificación<a class="headerlink" href="#ejercicio-1-calificacion" title="Link to this heading">#</a></h2>
+<p>Escribe un programa que pida al usuario una calificación (de 0 a 10) y determine si ha aprobado (5 o más) o no.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escribe el código aquí</span>
-<span class="c1"># Almacena tu nombre en la variable name</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar la calificación al usuario</span>
 
-<span class="c1"># Almacena tu nombre en la variable age</span>
-
-<span class="c1"># Utiliza la función print para mostrar la frase completa. Pista: print(&quot;Mi nommbre es&quot;, name, ..........)</span>
+<span class="c1"># Verificar si ha aprobado o no</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="ejercicio-3-imprimir-con-formato">
-<h2>Ejercicio 3: Imprimir con formato<a class="headerlink" href="#ejercicio-3-imprimir-con-formato" title="Link to this heading">#</a></h2>
-<p>Usa la función <code class="docutils literal notranslate"><span class="pre">print()</span></code> para mostrar un mensaje que incluya variables utilizando <strong>f-strings</strong>. Por ejemplo, “El área de un círculo con radio 5 es ….”.</p>
+<section id="ejercicio-2-numero-par-o-impar">
+<h2>Ejercicio 2: Número par o impar<a class="headerlink" href="#ejercicio-2-numero-par-o-impar" title="Link to this heading">#</a></h2>
+<p>Escribe un programa que pida al usuario un número y determine si es par o impar.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Asignar el valor del radio del círculo</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar un número al usuario</span>
 
-<span class="c1"># Asignar el valor de pi (número irracional)</span>
 
-<span class="c1"># Calcular el área del círculo usando la fórmula A = π * r^2</span>
-
-<span class="c1"># Imprimir el resultado en un formato legible utilizando f-strings</span>
- 
-<span class="c1"># Imprimir el resultado en un formato legible utilizando f-strings con dos decimales</span>
+<span class="c1"># Verificar si el número es par o impar. Descomenta las líneas</span>
+<span class="c1"># if ??????????????</span>
+   <span class="c1"># print(f&quot;{numero} es un número par.&quot;)</span>
+<span class="c1"># else:</span>
+   <span class="c1"># ?????????????????</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="ejercicio-4-imprimir-en-varias-lineas">
-<h2>Ejercicio 4: Imprimir en varias líneas<a class="headerlink" href="#ejercicio-4-imprimir-en-varias-lineas" title="Link to this heading">#</a></h2>
-<p>Usa la función <code class="docutils literal notranslate"><span class="pre">print()</span></code> para mostrar un mensaje en varias líneas. Imprime los <strong>cuatro primeros versos de “La canción del pirata” de Espronceda</strong> en líneas distintas.</p>
+<section id="ejercicio-4-comparacion-de-numeros">
+<h2>Ejercicio 4: Comparación de números<a class="headerlink" href="#ejercicio-4-comparacion-de-numeros" title="Link to this heading">#</a></h2>
+<p>Escribe un programa que pida al usuario dos números y determine cuál es mayor, o si son iguales.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escribe el código aquí</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar dos números al usuario. Convertirlos en float</span>
+
+<span class="c1"># Comparar los números</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="ejercicio-5-imprimir-listas">
-<h2>Ejercicio 5: Imprimir listas<a class="headerlink" href="#ejercicio-5-imprimir-listas" title="Link to this heading">#</a></h2>
-<p>Crea una <strong>lista de frutas</strong> y usa la función <code class="docutils literal notranslate"><span class="pre">print()</span></code> para mostrarla.</p>
+<section id="ejercicio-5-clasificacion-de-edad">
+<h2>Ejercicio 5: Clasificación de edad<a class="headerlink" href="#ejercicio-5-clasificacion-de-edad" title="Link to this heading">#</a></h2>
+<p>Escribe un programa que pida al usuario su edad y clasifique en “niño”, “adolescente”, “adulto” o “anciano”.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Escribe el código aquí</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar la edad del usuario</span>
+<span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu edad? &quot;</span><span class="p">))</span>
+
+<span class="c1"># Clasificar la edad</span>
 </pre></div>
 </div>
 </div>
@@ -610,20 +641,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="5_0_print.html"
+       href="9_0_if.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Función print()</p>
+        <p class="prev-next-title">Estructuras condicionales: if, elif y else</p>
       </div>
     </a>
     <a class="right-next"
-       href="6_0_input.html"
+       href="10_0_bucles.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Función input()</p>
+        <p class="prev-next-title">Bucles</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -644,11 +675,11 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1-imprimir-un-mensaje-simple">Ejercicio 1: Imprimir un mensaje simple</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2-imprimir-multiples-valores">Ejercicio 2: Imprimir múltiples valores</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3-imprimir-con-formato">Ejercicio 3: Imprimir con formato</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-imprimir-en-varias-lineas">Ejercicio 4: Imprimir en varias líneas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5-imprimir-listas">Ejercicio 5: Imprimir listas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto-verificacion-de-mayoria-de-edad">Ejercicio resuelto: Verificación de mayoría de edad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1-calificacion">Ejercicio 1: Calificación</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2-numero-par-o-impar">Ejercicio 2: Número par o impar</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-comparacion-de-numeros">Ejercicio 4: Comparación de números</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5-clasificacion-de-edad">Ejercicio 5: Clasificación de edad</a></li>
 </ul>
   </nav></div>
 

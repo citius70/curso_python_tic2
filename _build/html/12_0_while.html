@@ -192,9 +192,9 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Python</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Introducción</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_0_introduccion.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_0_introduccion.html">¿Qué es Python?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Variables</span></p>
 <ul class="nav bd-sidenav">
@@ -557,73 +557,45 @@
 </div>
 </div>
 <p><strong>Explicación</strong>; El código utiliza un bucle <code class="docutils literal notranslate"><span class="pre">while</span></code> para contar hacia atrás desde 5 hasta 1, imprimiendo cada número en cada iteración. La variable´ cuentaAtras´ se decrementa en 1 en cada ciclo hasta que llega a 0, momento en el cual el bucle se detiene y se imprime el mensaje “¡Despegue!”. Este ejemplo muestra cómo los bucles while permiten repetir acciones basadas en condiciones.</p>
-<p><strong>Ejemplo 3</strong>:  :  Sumar números</p>
+<section id="break-do-while">
+<h2>Break (do while)<a class="headerlink" href="#break-do-while" title="Link to this heading">#</a></h2>
+<p>El bucle <code class="docutils literal notranslate"><span class="pre">do-while</span></code> es un tipo de bucle que es común en algunos otros lenguajes de programación. Un bucle <code class="docutils literal notranslate"><span class="pre">do-while</span></code> es como un bucle while, pero siempre ejecuta el código dentro del bucle al menos una vez y luego sigue ejecutando el bucle mientras la condición sea verdadera.</p>
+<p>Python no tiene un bucle “do-while” integrado como algunos otros lenguajes, pero puedes simular un bucle “do-while” usando un bucle while con una sentencia <code class="docutils literal notranslate"><span class="pre">break</span></code>. Así es cómo puedes hacerlo:</p>
+<p><strong>Ejemplo</strong>:  Sumar números hasta que se introduce el 0.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">numero</span> <span class="o">=</span> <span class="kc">None</span>
 
-<span class="k">while</span> <span class="n">numero</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce un número (0 para terminar): &quot;</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">numero</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">break</span>
     <span class="n">suma</span> <span class="o">+=</span> <span class="n">numero</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La suma total es: </span><span class="si">{</span><span class="n">suma</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La suma total es: </span><span class="si">{</span><span class="n">suma</span><span class="si">}</span><span class="s2">&quot;</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">5</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">numero</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="k">while</span> <span class="n">numero</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-<span class="ne">----&gt; </span><span class="mi">5</span>     <span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduce un número (0 para terminar): &quot;</span><span class="p">))</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="n">suma</span> <span class="o">+=</span> <span class="n">numero</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La suma total es: </span><span class="si">{</span><span class="n">suma</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="nn">File ~\anaconda3\envs\ambiente_1\Lib\site-packages\ipykernel\kernelbase.py:1281,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1279</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allow_stdin</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1280</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1281</span>     <span class="k">raise</span> <span class="n">StdinNotImplementedError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1282</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_input_request</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1283</span>     <span class="nb">str</span><span class="p">(</span><span class="n">prompt</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1284</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_parent_ident</span><span class="p">[</span><span class="s2">&quot;shell&quot;</span><span class="p">],</span>
-<span class="g g-Whitespace">   </span><span class="mi">1285</span>     <span class="bp">self</span><span class="o">.</span><span class="n">get_parent</span><span class="p">(</span><span class="s2">&quot;shell&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1286</span>     <span class="n">password</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1287</span> <span class="p">)</span>
-
-<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">15</span><span class="p">],</span> <span class="n">line</span> <span class="mi">9</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;La suma total es: </span><span class="si">{</span><span class="n">suma</span><span class="si">}</span><span class="s2">&quot;</span><span class="mi">4</span><span class="p">)</span>
+          <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax. Perhaps you forgot a comma?
 </pre></div>
 </div>
 </div>
 </div>
-<section id="break-do-while">
-<h2>Break (do while)<a class="headerlink" href="#break-do-while" title="Link to this heading">#</a></h2>
-<p>El bucle “do-while” es un tipo de bucle que es común en algunos otros lenguajes de programación. Un bucle “do-while” es como un bucle while, pero siempre ejecuta el código dentro del bucle al menos una vez y luego sigue ejecutando el bucle mientras la condición sea verdadera.</p>
-<p>Python no tiene un bucle “do-while” integrado como algunos otros lenguajes, pero puedes simular un bucle “do-while” usando un bucle while con una sentencia break. Así es cómo puedes hacerlo:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-  <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-  <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">:</span>
-    <span class="k">break</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
-1
-2
-3
-4
-</pre></div>
-</div>
-</div>
-</div>
-<p>En este código, <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">True</span></code>: crea un bucle que normalmente se ejecutaría para siempre porque su condición siempre es verdadera. Pero la parte <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">i</span> <span class="pre">&gt;=</span> <span class="pre">5</span></code>: break verifica si i es 5 o más, y si es así, ejecuta la sentencia <code class="docutils literal notranslate"><span class="pre">break</span></code>, que sale inmediatamente del bucle.</p>
-<p>Por lo tanto, este código se comporta como un bucle “do-while”: siempre ejecuta el bucle al menos una vez y sigue ejecutando el bucle mientras i sea menor que 5.</p>
+<p><strong>Explicación:</strong></p>
+<ul class="simple">
+<li><p>El programa inicializa suma en 0.</p></li>
+<li><p>Entra en un bucle infinito (while True), donde pide al usuario que introduzca un número.</p>
+<ul>
+<li><p>Si el número es 0, el bucle se detiene (break).</p></li>
+<li><p>Si el número es diferente de 0, se suma a suma.</p></li>
+</ul>
+</li>
+<li><p>Al final, se imprime la suma total de los números introducidos.</p></li>
+</ul>
 </section>
 </section>
 

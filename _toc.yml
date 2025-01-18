@@ -9,7 +9,7 @@ parts:
   - caption: 1. Introducción
     chapters:
       - file: 1_0_introduccion.ipynb
-
+      
   - caption: 2. Variables
     chapters:
       - file: 2_0_variables_tiposdatos.ipynb
@@ -38,7 +38,7 @@ parts:
     chapters:
       - file: 8_0_estructurascontrol.ipynb
       - file: 9_0_if.ipynb
-      - file: 9_1_if_ejercicios.ipynb
+      - file: 9_1_if_ejerc.ipynb
       - file: 10_0_bucles.ipynb
         sections:
           - file: 11_0_for.ipynb

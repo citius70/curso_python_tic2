@@ -497,10 +497,21 @@
 <p>La función <code class="docutils literal notranslate"><span class="pre">input()</span></code> en Python es una herramienta clave para la <strong>interacción con el usuario</strong>, permitiendo que los programas <strong>reciban datos directamente desde el usuario a través de la entrada estándar, como el teclado</strong>. Esta función solicita al usuario que introduzca información, mostrando un mensaje opcional en la pantalla que invita a la persona a escribir algo.</p>
 <p>El valor que devuelve <code class="docutils literal notranslate"><span class="pre">input()</span></code> es frecuentemente asignado a una <code class="docutils literal notranslate"><span class="pre">variable</span></code> para ser utilizado más adelante en el programa. Por ejemplo, name = input(’¿Cuál es tu nombre?\n’) muestra la pregunta al usuario y guarda la respuesta en la variable name</p>
 <p>He aquí un ejemplo simple:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre?&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>En este código, <code class="docutils literal notranslate"><span class="pre">input(&quot;¿Cuál</span> <span class="pre">es</span> <span class="pre">tu</span> <span class="pre">nombre?</span> <span class="pre">&quot;)</span></code> imprime la cadena “¿Cuál es tu nombre? “ en la consola y luego espera que el usuario escriba algo. Lo que el usuario escriba es devuelto por la función input como una cadena, y en este caso se está almacenando en la variable <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<p>Después de que el usuario escribe su nombre y presiona enter, el programa continúa con la siguiente línea, que imprime el valor de la variable <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<div class="warning admonition">
+<p class="admonition-title">Atención</p>
+<p>Es importante destacar que la función <code class="docutils literal notranslate"><span class="pre">input()</span></code> siempre devuelve una <strong>cadena de texto</strong>…</p>
+</div>
+<p>…, entonces, si deseas usar la entrada como un <strong>entero</strong> o un <strong>flotante</strong> (por ejemplo, si estás pidiendo al usuario que introduzca su edad), necesitarás convertir el valor devuelto al tipo deseado utilizando la función <code class="docutils literal notranslate"><span class="pre">int()</span></code> o <code class="docutils literal notranslate"><span class="pre">float()</span></code>, así:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre?&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuántos años tienes? &quot;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El próximo año tendrás&quot;</span><span class="p">,</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -508,8 +519,8 @@
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre?&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuántos años tienes? &quot;</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El próximo año tendrás&quot;</span><span class="p">,</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="nn">File ~\anaconda3\envs\ambiente_1\Lib\site-packages\ipykernel\kernelbase.py:1281,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
 <span class="g g-Whitespace">   </span><span class="mi">1279</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allow_stdin</span><span class="p">:</span>
@@ -523,22 +534,6 @@
 <span class="g g-Whitespace">   </span><span class="mi">1287</span> <span class="p">)</span>
 
 <span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
-</pre></div>
-</div>
-</div>
-</div>
-<p>En este código, <code class="docutils literal notranslate"><span class="pre">input(&quot;¿Cuál</span> <span class="pre">es</span> <span class="pre">tu</span> <span class="pre">nombre?</span> <span class="pre">&quot;)</span></code> imprime la cadena “¿Cuál es tu nombre? “ en la consola y luego espera que el usuario escriba algo. Lo que el usuario escriba es devuelto por la función input como una cadena, y en este caso se está almacenando en la variable <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
-<p>Después de que el usuario escribe su nombre y presiona enter, el programa continúa con la siguiente línea, que imprime el valor de la variable <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Atención
-Es importante destacar que la función <code class="docutils literal notranslate"><span class="pre">input()</span></code> siempre devuelve una <strong>cadena de texto</strong>…</p>
-</div>
-<p>…si deseas usar la entrada como un <strong>entero</strong> o un <strong>flotante</strong> (por ejemplo, si estás pidiendo al usuario que introduzca su edad), necesitarás convertir el valor devuelto al tipo deseado utilizando la función <code class="docutils literal notranslate"><span class="pre">int()</span></code> o <code class="docutils literal notranslate"><span class="pre">float()</span></code>, así:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuántos años tienes? &quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El próximo año tendrás&quot;</span><span class="p">,</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
