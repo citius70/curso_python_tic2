@@ -1,0 +1,931 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Estructuras condicionales: if, elif y else &#8212; Python para TIC II</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=f0c89327" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=fb9458d3" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=f0c89327" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/theme.css?v=a243ae73" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '9_0_if';</script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/copybutton_funcs.js?v=776a791e"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/language_data.js?v=d4673a71"></script>
+    <script src="_static/searchtools.js?v=63a53a7d"></script>
+    <script src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/scripts/bootstrap.js?v=7583a70d"></script>
+    <script src="_static/scripts/fontawesome.js?v=9b125980"></script>
+    <script src="_static/scripts/pydata-sphinx-theme.js?v=a1eb5d9f"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Ejercicios sobre la estructura if…elif…else" href="9_1_if_ejercicios.html" />
+    <link rel="prev" title="Introducción a las estructuras de control" href="8_0_estructurascontrol.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Python para TIC II - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="Python para TIC II - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Curso de Python
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Python</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1_0_introduccion.html">Introducción</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Variables</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="2_0_variables_tiposdatos.html">Variables y tipos de datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_1_variables_ejercicios.html">Ejercicios de variables</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="3_0_matematicas.html">Operaciones matemáticas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="3_1_matematicas_ejercicios.html">Ejercicios de operaciones matemáticas</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Funciones básicas</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="4_0_comentarios.html">Comentarios</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="4_1_comentarios_ejercicios.html">Ejercicios sobre comentarios</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="5_0_print.html">Función print()</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_1_print_ejercicios.html">Ejercicios sobre la función print()</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="6_0_input.html">Función input()</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="6_1_input_ejercicios.html">Ejercicios sobre la función input()</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="7_0_funciones.html">Funciones def()</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="7_1_funciones_ejercicios.html">Ejercicios de funciones</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Estructuras de control</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="8_0_estructurascontrol.html">Introducción a las estructuras de control</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Estructuras condicionales: if, elif y else</a></li>
+
+<li class="toctree-l1 has-children"><a class="reference internal" href="10_0_bucles.html">Bucles</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="11_0_for.html">Bucle for</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_1_for_ejercicios.html">Ejercicios sobre el bucle for</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_0_while.html">Bucle while</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_1_while_ejercicios.html">Ejercicios sobre el bucle while</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">5. Estructuras de datos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="13_0_estructurasdatos.html">Intoducción a las estructuras de datos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="14_0_listas.html">Listas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="14_1_listas_ejercicios.html">Ejercicios con Listas</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="15_0_diccionarios.html">Diccionarios</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="15_1_diccionarios_ejercicios.html">Ejercicios con Diccionarios</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2/blob/gb-pages/9_0_if.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/citius70/curso_python_tic2" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/citius70/curso_python_tic2/edit/gb-pages/9_0_if.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/citius70/curso_python_tic2/issues/new?title=Issue%20on%20page%20%2F9_0_if.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/9_0_if.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Estructuras condicionales: if, elif y else</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Estructuras condicionales: if, elif y else</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-if">Estructura if</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-if-else">Estructura if…else</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-if-elif-else">Estructura if… elif… …  … else</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-comparacion">Operadores de comparación</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-and-y-or">Operadores and y or</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expresiones-condicionales">Expresiones condicionales</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="estructuras-condicionales-if-elif-y-else">
+<h1>Estructuras condicionales: if, elif y else<a class="headerlink" href="#estructuras-condicionales-if-elif-y-else" title="Link to this heading">#</a></h1>
+<p>En Python, las estructuras <strong>condicionales</strong>, como <code class="docutils literal notranslate"><span class="pre">if</span></code> <strong>se usan para ejecutar un bloque de código si cierta condición es verdadera</strong>, permitiendo controlar el flujo de tu programa. Es una de las estructuras de control más utilizadas en programación.
+Python utiliza las palabras clave <strong>if</strong>, <strong>elif</strong> (que significa “else if”) y <strong>else</strong> para controlar los condicionales.</p>
+<section id="estructura-if">
+<h2>Estructura if<a class="headerlink" href="#estructura-if" title="Link to this heading">#</a></h2>
+<p>La estructura <code class="docutils literal notranslate"><span class="pre">if</span></code> se utiliza para ejecutar un bloque de código <strong>si una condición es verdadera</strong>.
+<img src="https://www.c-programming-simple-steps.com/images/xif-statement-flow-chart.png.pagespeed.ic.AVRTSeXOUV.webp" style="width: 200px; display: block; margin: auto;">
+La sintaxis básica es la siguiente:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condicion</span><span class="p">:</span>
+    <span class="c1"># bloque de código si la condición es verdadera</span>
+</pre></div>
+</div>
+<p>Por ejemplo, podemos utilizar un <code class="docutils literal notranslate"><span class="pre">if</span></code> para verificar si un <strong>número es mayor que 0</strong>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numero</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Cierto. El número es mayor que 0&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Cierto. El número es mayor que 0
+</pre></div>
+</div>
+</div>
+</div>
+<p>El código asigna el valor <code class="docutils literal notranslate"><span class="pre">5</span></code> a la variable <code class="docutils literal notranslate"><span class="pre">numero</span></code> (numero = 5) y luego utiliza una estructura condicional <code class="docutils literal notranslate"><span class="pre">if</span></code> para verificar si el valor de <code class="docutils literal notranslate"><span class="pre">numero</span></code> es mayor que 0 (if numero &gt; 0). Si la condición se cumple (como en este caso, porque <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">&gt;</span> <span class="pre">0</span></code>), se ejecuta el bloque de código asociado, que imprime el mensaje <strong>“Cierto. El número es mayor que 0”</strong> en la consola.</p>
+<p>Si la condición no se cumpliera (por ejemplo, si <code class="docutils literal notranslate"><span class="pre">numero</span></code> fuera <code class="docutils literal notranslate"><span class="pre">0</span></code> o un valor negativo), el bloque de código dentro del <code class="docutils literal notranslate"><span class="pre">if</span></code> no se ejecutaría, y no se mostraría ningún mensaje.</p>
+</section>
+<section id="estructura-if-else">
+<h2>Estructura if…else<a class="headerlink" href="#estructura-if-else" title="Link to this heading">#</a></h2>
+<p>La estructura <code class="docutils literal notranslate"><span class="pre">else</span></code> siempre va asociada a la estructura <code class="docutils literal notranslate"><span class="pre">if</span></code>. Se utiliza para <strong>ejecutar un bloque de código cuando la condición en el if es falsa</strong>.
+<img src="https://www.c-programming-simple-steps.com/images/xif-else-statement-flow-chart.png.pagespeed.ic.Z9mIxeupR_.webp" style="width: 300px; display: block; margin: auto;">
+La sintaxis es la siguiente:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condicion</span><span class="p">:</span>
+    <span class="c1"># bloque de código si la condición es verdadera</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># bloque de código si la condición es falsa</span>
+</pre></div>
+</div>
+<p>Siguiendo el ejemplo anterior, podríamos agregar un <code class="docutils literal notranslate"><span class="pre">else</span></code> para manejar el caso en que el <strong>número no sea mayor que 0</strong>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numero</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
+
+<span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número es mayor que 0&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número es menor que 0&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>El número es menor que 0
+</pre></div>
+</div>
+</div>
+</div>
+<p>En este caso, como numero es -5 y la condición numero &gt; 0 es <strong>falsa</strong>, entonces <strong>se ejecutará el bloque de código dentro del else</strong> y veremos en la salida “El número es menor o igual a 10”.</p>
+</section>
+<section id="estructura-if-elif-else">
+<h2>Estructura if… elif… …  … else<a class="headerlink" href="#estructura-if-elif-else" title="Link to this heading">#</a></h2>
+<p>La estructura <code class="docutils literal notranslate"><span class="pre">elif</span></code> se utiliza para evaluar <strong>múltiples condiciones</strong> de manera secuencial. Es una abreviatura de “else if”.</p>
+<p>La sintaxis es la siguiente:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">condicion_1</span><span class="p">:</span>
+    <span class="c1"># bloque de código si la condicion_1 es verdadera</span>
+<span class="k">elif</span> <span class="n">condicion_2</span><span class="p">:</span>
+    <span class="c1"># bloque de código si la condicion_1 es falsa y la condicion_2 es verdadera</span>
+<span class="k">elif</span> <span class="n">condicion_3</span><span class="p">:</span>
+    <span class="c1"># bloque de código si la condicion_1 es falsa, la condicion_2 es falsa y la condicion_3 es verdadera</span>
+<span class="o">...</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># bloque de código si todas las condiciones anteriores son falsas</span>
+</pre></div>
+</div>
+<p>Veamos un ejemplo donde utilizamos <code class="docutils literal notranslate"><span class="pre">elif</span></code> para clasificar un <strong>número en relación con 0</strong> (positivo, negativo o neutro)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numero</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número es positivo&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">numero</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número es negativo&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El número es neutro&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>El número es positivo
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="operadores-de-comparacion">
+<h1>Operadores de comparación<a class="headerlink" href="#operadores-de-comparacion" title="Link to this heading">#</a></h1>
+<p>Los operadores de comparación se utilizan para comparar dos valores. Aquí están los principales operadores de comparación en Python:</p>
+<ul class="simple">
+<li><p><strong>Igual a (==)</strong>: Este operador verifica si los dos valores son iguales. Por ejemplo, 5 == 3 es Falso.</p></li>
+<li><p><strong>No igual a (!=)</strong>: Este operador verifica si los dos valores no son iguales. Por ejemplo, 5 != 3 es Verdadero.</p></li>
+<li><p><strong>Mayor que (&gt;)</strong>: Este operador verifica si el primer valor es mayor que el segundo. Por ejemplo, 5 &gt; 3 es Verdadero.</p></li>
+<li><p><strong>Menor que (&lt;)</strong>: Este operador verifica si el primer valor es menor que el segundo. Por ejemplo, 5 &lt; 3 es Falso.</p></li>
+<li><p><strong>Mayor o igual que (&gt;=)</strong>: Este operador verifica si el primer valor es mayor o igual que el segundo. Por ejemplo, 5 &gt;= 3 es Verdadero.</p></li>
+<li><p><strong>Menor o igual que (&lt;=)</strong>: Este operador verifica si el primer valor es menor o igual que el segundo. Por ejemplo, 5 &lt;= 3 es Falso.</p></li>
+</ul>
+<p>Estos operadores devuelven un valor booleano (Verdadero o Falso). A menudo se utilizan en condiciones, como en declaraciones <code class="docutils literal notranslate"><span class="pre">if</span></code> o bucles <code class="docutils literal notranslate"><span class="pre">while</span></code>.</p>
+<p>Por ejemplo</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definamos dos variables</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1"># Ahora podemos usar el operador &#39;==&#39; para verificar si estas dos variables son iguales</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
+ <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a es igual a b&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+ <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a no es igual a b&quot;</span><span class="p">)</span> <span class="c1"># Esto se imprimirá</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a no es igual a b
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># También podemos usar el operador &#39;!=&#39; para verificar si dos variables no son iguales</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">if</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="p">:</span>
+ <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a no es igual a b&quot;</span><span class="p">)</span> <span class="c1"># Esto se imprimirá</span>
+<span class="k">else</span><span class="p">:</span>
+ <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a es igual a b&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>a no es igual a b
+</pre></div>
+</div>
+</div>
+</div>
+<section id="operadores-and-y-or">
+<h2>Operadores and y or<a class="headerlink" href="#operadores-and-y-or" title="Link to this heading">#</a></h2>
+<p>Puedes evaluar multiples condiciones utilizando <code class="docutils literal notranslate"><span class="pre">and</span></code> para cuando necesites que las condiciones sean todas verdaderas, o bien <code class="docutils literal notranslate"><span class="pre">or</span></code> para cuando necesitas solo evaluar una parte de todas las condiciones.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">7</span>
+
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+  <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Tiene que cumplirse las dos condiciones para devolver un TRUE&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LOL&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tiene que cumplirse las dos condiciones para devolver un TRUE
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">7</span>
+
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">9</span> <span class="ow">or</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+  <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Basta con que se cumpla una de las condiciones para devolver un TRUE&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LOL&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Basta con que se cumpla una de las condiciones para devolver un TRUE
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">estoyAfuera</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">estaLloviendo</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="k">if</span> <span class="n">estoyAfuera</span> <span class="ow">and</span> <span class="n">estaLloviendo</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;trae el paraguas&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>trae el paraguas
+</pre></div>
+</div>
+</div>
+</div>
+<p>También puedes combinar ambos, por ejemplo en en el siguiente caso evaluamos si una persona es alta, lo cual depende de su altura y de su genero</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">genero</span> <span class="o">=</span> <span class="s2">&quot;F&quot;</span>
+<span class="n">altura</span> <span class="o">=</span> <span class="mi">160</span>
+
+<span class="k">if</span> <span class="p">(</span> <span class="n">genero</span> <span class="o">==</span> <span class="s2">&quot;M&quot;</span> <span class="ow">and</span> <span class="n">altura</span> <span class="o">&gt;</span> <span class="mi">173</span> <span class="p">)</span> <span class="ow">or</span> <span class="p">(</span> <span class="n">genero</span> <span class="o">==</span> <span class="s2">&quot;F&quot;</span> <span class="ow">and</span> <span class="n">altura</span> <span class="o">&gt;</span> <span class="mi">163</span> <span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La persona es alta&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La persona no es alta&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>La persona no es alta
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="expresiones-condicionales">
+<h2>Expresiones condicionales<a class="headerlink" href="#expresiones-condicionales" title="Link to this heading">#</a></h2>
+<p>En python, una expresión condicional se escribe del siguiente modo
+<code class="docutils literal notranslate"><span class="pre">X</span> <span class="pre">if</span> <span class="pre">condition</span> <span class="pre">else</span> <span class="pre">Y</span></code></p>
+<p>Nos ayuda a que nuestros códigos sean más legibles y limpios. Por ejemplo el siguiente código evalua en muy pocas líneas si un código es par</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">miNumero</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;el número es par&quot;</span> <span class="k">if</span> <span class="n">miNumero</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">&quot;el número es impar&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>el número es par
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">estaLloviendo</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;vamos al&quot;</span><span class="p">,</span> <span class="s2">&quot;parque&quot;</span> <span class="k">if</span> <span class="n">estaLloviendo</span> <span class="k">else</span> <span class="s2">&quot;restaurante&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>vamos al parque
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+  <span class="n">i</span> <span class="o">=</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="c1"># Esto es equivalente a i +=1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
+1
+2
+3
+4
+</pre></div>
+</div>
+</div>
+</div>
+<p>En este código, <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">5</span></code> es la condición para el bucle while. Mientras esta condición sea verdadera (en otras palabras, mientras i sea menor que 5), el código dentro del bucle seguirá ejecutándose. En este caso, el código dentro del bucle es <code class="docutils literal notranslate"><span class="pre">print(i)</span></code> e <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">+=</span> <span class="pre">1</span></code>.</p>
+<p>La línea <code class="docutils literal notranslate"><span class="pre">print(i)</span></code> imprime el valor actual de i en la consola, y la línea <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">+=</span> <span class="pre">1</span></code> incrementa i en 1. Por lo tanto, cada vez que pasa por el bucle, i se hace más grande y, una vez que i ya no sea menor que 5, el bucle dejará de ejecutarse.</p>
+<p>Es importante asegurarse de que la condición del bucle eventualmente se vuelva falsa, de lo contrario, el bucle se ejecutaría indefinidamente, creando lo que se conoce como un “bucle infinito”. En este ejemplo, i sigue aumentando, por lo que eventualmente será 5 o más, y la condición <code class="docutils literal notranslate"><span class="pre">i</span> <span class="pre">&lt;</span> <span class="pre">5</span></code> será falsa.</p>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="8_0_estructurascontrol.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Introducción a las estructuras de control</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="9_1_if_ejercicios.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ejercicios sobre la estructura if…elif…else</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Estructuras condicionales: if, elif y else</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-if">Estructura if</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-if-else">Estructura if…else</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estructura-if-elif-else">Estructura if… elif… …  … else</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-de-comparacion">Operadores de comparación</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#operadores-and-y-or">Operadores and y or</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expresiones-condicionales">Expresiones condicionales</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Alberto Durán Pérez
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
