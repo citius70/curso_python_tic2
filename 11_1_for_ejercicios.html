@@ -30,13 +30,22 @@
   <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=f0c89327" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=fb9458d3" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=f0c89327" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/theme.css?v=a243ae73" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -61,6 +70,21 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '11_1_for_ejercicios';</script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/copybutton_funcs.js?v=776a791e"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/language_data.js?v=d4673a71"></script>
+    <script src="_static/searchtools.js?v=63a53a7d"></script>
+    <script src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/scripts/bootstrap.js?v=7583a70d"></script>
+    <script src="_static/scripts/fontawesome.js?v=9b125980"></script>
+    <script src="_static/scripts/pydata-sphinx-theme.js?v=a1eb5d9f"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Bucle while" href="12_0_while.html" />
@@ -168,9 +192,9 @@
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Python</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Introducción</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_0_introduccion.html">Introducción</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_0_introduccion.html">¿Qué es Python?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Variables</span></p>
 <ul class="nav bd-sidenav">
@@ -179,7 +203,7 @@
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="3_0_matematicas.html">Operaciones matemáticas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="3_1_matematicas_ejercicios.html">Ejercicios de Operaciones Matemáticas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_1_matematicas_ejercicios.html">Ejercicios de operaciones matemáticas</a></li>
 </ul>
 </details></li>
 </ul>
@@ -193,7 +217,7 @@
 <li class="toctree-l2"><a class="reference internal" href="5_1_print_ejercicios.html">Ejercicios sobre la función print()</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="6_0_input.html">La función input()</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="6_0_input.html">Función input()</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="6_1_input_ejercicios.html">Ejercicios sobre la función input()</a></li>
 </ul>
 </details></li>
@@ -285,7 +309,7 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/citius70/pythonTICII/blob/main/mybookname/11_1_for_ejercicios.ipynb" target="_blank"
+      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2/blob/gb-pages/11_1_for_ejercicios.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -316,7 +340,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/pythonTICII" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -333,7 +357,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/pythonTICII/edit/main/mybookname/11_1_for_ejercicios.ipynb" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2/edit/gb-pages/11_1_for_ejercicios.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -350,7 +374,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/pythonTICII/issues/new?title=Issue%20on%20page%20%2F11_1_for_ejercicios.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2/issues/new?title=Issue%20on%20page%20%2F11_1_for_ejercicios.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -466,11 +490,11 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto-imprimir-numeros-del-1-al-10">Ejercicio Resuelto: Imprimir Números del 1 al 10</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1-imprimir-numeros-del-5-al-12">Ejercicio 1: Imprimir Números del 5 al 12</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2-imprimir-una-lista">Ejercicio 2: Imprimir una Lista</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3-tabla-de-multiplicar">Ejercicio 3: Tabla de Multiplicar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-contar-vocales">Ejercicio 4: Contar Vocales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto">Ejercicio Resuelto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4</a></li>
 </ul>
             </nav>
         </div>
@@ -484,8 +508,9 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="ejercicios-sobre-el-bucle-for">
 <h1>Ejercicios sobre el bucle for<a class="headerlink" href="#ejercicios-sobre-el-bucle-for" title="Link to this heading">#</a></h1>
-<section id="ejercicio-resuelto-imprimir-numeros-del-1-al-10">
-<h2>Ejercicio Resuelto: Imprimir Números del 1 al 10<a class="headerlink" href="#ejercicio-resuelto-imprimir-numeros-del-1-al-10" title="Link to this heading">#</a></h2>
+<section id="ejercicio-resuelto">
+<h2>Ejercicio Resuelto<a class="headerlink" href="#ejercicio-resuelto" title="Link to this heading">#</a></h2>
+<p><strong>Imprimir números del 1 al 10</strong></p>
 <p>Escribe un programa que imprima los números del 1 al 10 utilizando un bucle <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imprimir números del 1 al 10</span>
 <span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
@@ -493,9 +518,12 @@
 </pre></div>
 </div>
 </section>
-<section id="ejercicio-1-imprimir-numeros-del-5-al-12">
-<h2>Ejercicio 1: Imprimir Números del 5 al 12<a class="headerlink" href="#ejercicio-1-imprimir-numeros-del-5-al-12" title="Link to this heading">#</a></h2>
-<p>Escribe un programa que imprima los números del 5 al 12 utilizando un bucle <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
+<section id="ejercicio-1">
+<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
+<p><strong>Imprimir Números del 5 al 12</strong></p>
+<ul class="simple">
+<li><p>Escribe un programa que imprima los números del 5 al 12 utilizando un bucle <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Imprimir números del 5 al 12</span>
@@ -504,9 +532,12 @@
 </div>
 </div>
 </section>
-<section id="ejercicio-2-imprimir-una-lista">
-<h2>Ejercicio 2: Imprimir una Lista<a class="headerlink" href="#ejercicio-2-imprimir-una-lista" title="Link to this heading">#</a></h2>
-<p>Escribe un programa que tenga una lista de frutas y use un bucle for para imprimir cada fruta en la lista.</p>
+<section id="ejercicio-2">
+<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Link to this heading">#</a></h2>
+<p><strong>Imprimir una lista</strong></p>
+<ul class="simple">
+<li><p>Escribe un programa que tenga una lista de frutas y use un bucle for para imprimir cada fruta en la lista.</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lista de frutas</span>
@@ -517,9 +548,12 @@
 </div>
 </div>
 </section>
-<section id="ejercicio-3-tabla-de-multiplicar">
-<h2>Ejercicio 3: Tabla de Multiplicar<a class="headerlink" href="#ejercicio-3-tabla-de-multiplicar" title="Link to this heading">#</a></h2>
-<p>Escribe un programa que pida al usuario un número y luego imprima la tabla de multiplicar de ese número del 1 al 10.</p>
+<section id="ejercicio-3">
+<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Link to this heading">#</a></h2>
+<p><strong>Tabla de multiplicar</strong></p>
+<ul class="simple">
+<li><p>Escribe un programa que pida al usuario un número y luego imprima la tabla de multiplicar de ese número del 1 al 10.</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar un número al usuario</span>
@@ -531,9 +565,12 @@
 </div>
 </div>
 </section>
-<section id="ejercicio-4-contar-vocales">
-<h2>Ejercicio 4: Contar Vocales<a class="headerlink" href="#ejercicio-4-contar-vocales" title="Link to this heading">#</a></h2>
-<p>Escribe un programa que pida al usuario una frase y cuente cuántas vocales hay en ella utilizando un bucle for.</p>
+<section id="ejercicio-4">
+<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Link to this heading">#</a></h2>
+<p><strong>Contar vocales</strong></p>
+<ul class="simple">
+<li><p>Escribe un programa que pida al usuario una frase y cuente cuántas vocales hay en ella utilizando un bucle for.</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar una frase al usuario</span>
@@ -616,11 +653,11 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto-imprimir-numeros-del-1-al-10">Ejercicio Resuelto: Imprimir Números del 1 al 10</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1-imprimir-numeros-del-5-al-12">Ejercicio 1: Imprimir Números del 5 al 12</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2-imprimir-una-lista">Ejercicio 2: Imprimir una Lista</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3-tabla-de-multiplicar">Ejercicio 3: Tabla de Multiplicar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-contar-vocales">Ejercicio 4: Contar Vocales</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto">Ejercicio Resuelto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4</a></li>
 </ul>
   </nav></div>
 
