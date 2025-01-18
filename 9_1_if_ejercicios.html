@@ -490,11 +490,11 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto-verificacion-de-mayoria-de-edad">Ejercicio resuelto: Verificación de mayoría de edad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1-calificacion">Ejercicio 1: Calificación</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2-numero-par-o-impar">Ejercicio 2: Número par o impar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-comparacion-de-numeros">Ejercicio 4: Comparación de números</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5-clasificacion-de-edad">Ejercicio 5: Clasificación de edad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto">Ejercicio resuelto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4</a></li>
 </ul>
             </nav>
         </div>
@@ -508,12 +508,11 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="ejercicios-sobre-la-estructura-if-elif-else">
 <h1>Ejercicios sobre la estructura if…elif…else<a class="headerlink" href="#ejercicios-sobre-la-estructura-if-elif-else" title="Link to this heading">#</a></h1>
-<section id="ejercicio-resuelto-verificacion-de-mayoria-de-edad">
-<h2>Ejercicio resuelto: Verificación de mayoría de edad<a class="headerlink" href="#ejercicio-resuelto-verificacion-de-mayoria-de-edad" title="Link to this heading">#</a></h2>
+<section id="ejercicio-resuelto">
+<h2>Ejercicio resuelto<a class="headerlink" href="#ejercicio-resuelto" title="Link to this heading">#</a></h2>
+<p><strong>Verificación de mayoría de edad</strong></p>
 <p>Programa que pida al usuario su edad y verifique si es mayor de edad (18 años o más).</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar la edad del usuario</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar la edad del usuario</span>
 <span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu edad? &quot;</span><span class="p">))</span>
 
 <span class="c1"># Verificar si es mayor de edad</span>
@@ -523,48 +522,24 @@
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No puedes votar, eres menor de edad.&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Solicitar la edad del usuario</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu edad? &quot;</span><span class="p">))</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># Verificar si es mayor de edad</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="k">if</span> <span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
-
-<span class="nn">File ~\anaconda3\envs\ambiente_1\Lib\site-packages\ipykernel\kernelbase.py:1281,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1279</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allow_stdin</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1280</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1281</span>     <span class="k">raise</span> <span class="n">StdinNotImplementedError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1282</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_input_request</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1283</span>     <span class="nb">str</span><span class="p">(</span><span class="n">prompt</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1284</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_parent_ident</span><span class="p">[</span><span class="s2">&quot;shell&quot;</span><span class="p">],</span>
-<span class="g g-Whitespace">   </span><span class="mi">1285</span>     <span class="bp">self</span><span class="o">.</span><span class="n">get_parent</span><span class="p">(</span><span class="s2">&quot;shell&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1286</span>     <span class="n">password</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1287</span> <span class="p">)</span>
-
-<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
-</pre></div>
-</div>
-</div>
-</div>
 </section>
-<section id="ejercicio-1-calificacion">
-<h2>Ejercicio 1: Calificación<a class="headerlink" href="#ejercicio-1-calificacion" title="Link to this heading">#</a></h2>
+<section id="ejercicio-1">
+<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
+<p><strong>Calificación</strong></p>
 <p>Escribe un programa que pida al usuario una calificación (de 0 a 10) y determine si ha aprobado (5 o más) o no.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar la calificación al usuario</span>
 
-<span class="c1"># Verificar si ha aprobado o no</span>
+<span class="c1"># Verificar si ha aprobado</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="ejercicio-2-numero-par-o-impar">
-<h2>Ejercicio 2: Número par o impar<a class="headerlink" href="#ejercicio-2-numero-par-o-impar" title="Link to this heading">#</a></h2>
+<section id="ejercicio-2">
+<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Link to this heading">#</a></h2>
+<p><strong>Número par o impar</strong></p>
 <p>Escribe un programa que pida al usuario un número y determine si es par o impar.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -572,17 +547,14 @@
 
 
 <span class="c1"># Verificar si el número es par o impar. Descomenta las líneas</span>
-<span class="c1"># if ??????????????</span>
-   <span class="c1"># print(f&quot;{numero} es un número par.&quot;)</span>
-<span class="c1"># else:</span>
-   <span class="c1"># ?????????????????</span>
 </pre></div>
 </div>
 </div>
 </div>
 </section>
-<section id="ejercicio-4-comparacion-de-numeros">
-<h2>Ejercicio 4: Comparación de números<a class="headerlink" href="#ejercicio-4-comparacion-de-numeros" title="Link to this heading">#</a></h2>
+<section id="ejercicio-3">
+<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Link to this heading">#</a></h2>
+<p><strong>Comparación de números</strong></p>
 <p>Escribe un programa que pida al usuario dos números y determine cuál es mayor, o si son iguales.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -594,13 +566,13 @@
 </div>
 </div>
 </section>
-<section id="ejercicio-5-clasificacion-de-edad">
-<h2>Ejercicio 5: Clasificación de edad<a class="headerlink" href="#ejercicio-5-clasificacion-de-edad" title="Link to this heading">#</a></h2>
+<section id="ejercicio-4">
+<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Link to this heading">#</a></h2>
+<p><strong>Clasificación de edad</strong></p>
 <p>Escribe un programa que pida al usuario su edad y clasifique en “niño”, “adolescente”, “adulto” o “anciano”.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar la edad del usuario</span>
-<span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu edad? &quot;</span><span class="p">))</span>
 
 <span class="c1"># Clasificar la edad</span>
 </pre></div>
@@ -675,11 +647,11 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto-verificacion-de-mayoria-de-edad">Ejercicio resuelto: Verificación de mayoría de edad</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1-calificacion">Ejercicio 1: Calificación</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2-numero-par-o-impar">Ejercicio 2: Número par o impar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4-comparacion-de-numeros">Ejercicio 4: Comparación de números</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-5-clasificacion-de-edad">Ejercicio 5: Clasificación de edad</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto">Ejercicio resuelto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4</a></li>
 </ul>
   </nav></div>
 
