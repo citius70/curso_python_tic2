@@ -750,6 +750,31 @@ write our own version as an exercise.</p>
 for any positive integer <span class="math notranslate nohighlight">\(n\)</span>.</p>
 </section>
 </div>
+<div class="exercise admonition" id="factorial-ejercicio">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4 </span></p>
+<section id="exercise-content">
+<p>Recuerda que <span class="math notranslate nohighlight">\(n!\)</span> se lee como “<span class="math notranslate nohighlight">\(n\)</span> factorial” y se define como
+<span class="math notranslate nohighlight">\(n! = n \times (n - 1) \times \cdots \times 2 \times 1\)</span>.</p>
+<p>Hay funciones para calcular esto en varios módulos, pero escribamos
+nuestra propia versión como ejercicio.</p>
+<p><strong>Ejercicio</strong>: Escribe una función <code class="docutils literal notranslate"><span class="pre">factorial</span></code> tal que <code class="docutils literal notranslate"><span class="pre">factorial(n)</span></code> devuelva <span class="math notranslate nohighlight">\(n!\)</span>
+para cualquier entero positivo <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calcula el factorial de un entero positivo n.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">resultado</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">resultado</span> <span class="o">*=</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="n">resultado</span>
+
+<span class="c1"># Probar la función</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># Debe imprimir 120</span>
+</pre></div>
+</div>
+</section>
+</div>
 </section>
 </section>
 </section>
