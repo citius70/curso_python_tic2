@@ -1,0 +1,69 @@
+/* _static/custom.css */
+
+/* SOLUCIÓN CORREGIDA - Elimina la duplicación */
+.exercise .admonition-title::before {
+    content: "Ejercicio" !important;
+}
+
+/* ESTILOS PARA EJERCICIOS EN ESPAÑOL */
+.exercise {
+    border-left: 5px solid #1f77b4;
+    background-color: #f0f8ff;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.exercise .admonition-title {
+    color: #1f77b4;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Icono para ejercicio (opcional) */
+.exercise .admonition-title::before {
+    content: "📝 "; /* Icono de ejercicio */
+    margin-right: 0.5rem;
+}
+
+/* También puedes cambiar otros textos en inglés */
+.solution .admonition-title::before {
+    content: "✅ Solución" !important;
+}
+
+.proof .admonition-title::before {
+    content: "📘 Demostración" !important;
+}
+
+.note .admonition-title::before {
+    content: "💡 Nota" !important;
+}
+
+.warning .admonition-title::before {
+    content: "⚠️ Advertencia" !important;
+}
+
+.tip .admonition-title::before {
+    content: "💡 Consejo" !important;
+}
+
+/* Estilos generales para todas las admonitions */
+div.admonition {
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+div.admonition p.admonition-title {
+    font-size: 1.1em;
+    padding: 0.75rem 1rem;
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+div.admonition div.admonition-content {
+    padding: 1rem;
+}
