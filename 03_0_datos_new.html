@@ -71,8 +71,6 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = '03_0_datos_new';</script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
@@ -206,10 +204,9 @@
 <li class="toctree-l1"><a class="reference internal" href="2_0_variables_tiposdatos.html">Variables y tipos de datos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_0_variables_new.html">Variables</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tipos de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="untitled1.html">dvsds</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="untitled2.html">ijkfseed</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="untitled1.html">dvsds</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="2_1_variables_ejercicios.html">Ejercicios de variables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ejercicios/2_1_variables_ejerc_new.html">Ejercicios de variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ejercicios/2_1_variables_ejerc_new.html">Ejercicios</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="3_0_matematicas.html">Operaciones matemáticas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -890,34 +887,6 @@ Hola 5
 <li><p>Usa <code class="docutils literal notranslate"><span class="pre">type()</span></code> para conocer el tipo de una variable.</p></li>
 <li><p>Siempre elige <strong>nombres descriptivos</strong> para tus variables.</p></li>
 </ul>
-</div>
-<div class="exercise admonition" id="my-exercise">
-
-<p class="admonition-title"><span class="caption-number">Exercise 1 </span></p>
-<section id="exercise-content">
-<p>Recall that <span class="math notranslate nohighlight">\(n!\)</span> is read as «<span class="math notranslate nohighlight">\(n\)</span> factorial» and defined as
-<span class="math notranslate nohighlight">\(n! = n \times (n - 1) \times \cdots \times 2 \times 1\)</span>.</p>
-<p>There are functions to compute this in various modules, but let’s
-write our own version as an exercise.</p>
-<p>In particular, write a function <code class="docutils literal notranslate"><span class="pre">factorial</span></code> such that <code class="docutils literal notranslate"><span class="pre">factorial(n)</span></code> returns <span class="math notranslate nohighlight">\(n!\)</span>
-for any positive integer <span class="math notranslate nohighlight">\(n\)</span>.</p>
-</section>
-</div>
-<div class="solution admonition" id="my-solution">
-
-<p class="admonition-title">Solution to<a class="reference internal" href="#my-exercise"> Exercise 1</a></p>
-<section id="solution-content">
-<p>Here’s one solution.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">k</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-        <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">k</span>
-
-<span class="n">factorial</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
 </div>
 </section>
 </section>
