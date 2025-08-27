@@ -1,0 +1,12 @@
+/* custom.css */
+.exercise .admonition-title::before {
+  content: "Ejercicio" !important;
+}
+.exercise .admonition-title {
+  visibility: hidden;
+}
+.exercise .admonition-title::after {
+  content: "Ejercicio";
+  visibility: visible;
+  display: block;
+}
