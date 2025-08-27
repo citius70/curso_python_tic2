@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css?v=982b99e0" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=fb9458d3" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -195,11 +196,17 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Introducción</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1_0_introduccion.html">¿Qué es Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_0_introduccion_new.html">¿Qué es Python? 🐍</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Datos</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_0_variables_tiposdatos.html">Variables y tipos de datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1"><a class="reference internal" href="2_0_variables_tiposdatos.html">Variables y tipos de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_0_variables_new.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_0_datos_new.html">Tipos de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="untitled1.html">dvsds</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="untitled2.html">ijkfseed</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="2_1_variables_ejercicios.html">Ejercicios de variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ejercicios/2_1_variables_ejerc_new.html">Ejercicios de variables</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="3_0_matematicas.html">Operaciones matemáticas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -309,7 +316,25 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2/blob/gh-pages/14_0_listas.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/citius70/curso_python_tic2.git/gh-pages?urlpath=tree/14_0_listas.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2.git/blob/gh-pages/14_0_listas.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -322,6 +347,42 @@
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fcitius70%2Fcurso_python_tic2.git%2Fblob%2Fgh-pages%2F14_0_listas.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Deepnote"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Deepnote logo" src="_static/images/logo_deepnote.svg">
+  </span>
+<span class="btn__text-container">Deepnote</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
 </li>
       
   </ul>
@@ -340,7 +401,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +418,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2/edit/gh-pages/14_0_listas.ipynb" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git/edit/gh-pages/14_0_listas.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -374,7 +435,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2/issues/new?title=Issue%20on%20page%20%2F14_0_listas.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git/issues/new?title=Issue%20on%20page%20%2F14_0_listas.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -887,9 +948,7 @@ Elemento eliminado: jirafa
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;dátil&#39;, &#39;naranja&#39;, &#39;uva&#39;]
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;manzana&#39;, &#39;banana&#39;, &#39;cereza&#39;]
+[&#39;manzana&#39;, &#39;banana&#39;, &#39;cereza&#39;]
 </pre></div>
 </div>
 </div>
@@ -931,8 +990,8 @@ Elemento eliminado: jirafa
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "citius70/curso_python_tic2.git",
+            ref: "gh-pages",
         },
         codeMirrorConfig: {
             theme: "abcdef",

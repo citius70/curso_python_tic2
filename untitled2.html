@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Ejercicios sobre la estructura if…elif…else &#8212; Python para TIC II</title>
+    <title>ijkfseed &#8212; Python para TIC II</title>
   
   
   
@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css?v=982b99e0" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=fb9458d3" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -69,7 +70,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'prueba';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'untitled2';</script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/copybutton_funcs.js?v=776a791e"></script>
@@ -87,8 +90,8 @@
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Bucles" href="10_0_bucles.html" />
-    <link rel="prev" title="Estructuras condicionales: if, elif y else" href="9_0_if.html" />
+    <link rel="next" title="Ejercicios de variables" href="2_1_variables_ejercicios.html" />
+    <link rel="prev" title="dvsds" href="untitled1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -195,11 +198,17 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Introducción</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1_0_introduccion.html">¿Qué es Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_0_introduccion_new.html">¿Qué es Python? 🐍</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Variables</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_0_variables_tiposdatos.html">Variables y tipos de datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Datos</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="2_0_variables_tiposdatos.html">Variables y tipos de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_0_variables_new.html">Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_0_datos_new.html">Tipos de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="untitled1.html">dvsds</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">ijkfseed</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="2_1_variables_ejercicios.html">Ejercicios de variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ejercicios/2_1_variables_ejerc_new.html">Ejercicios de variables</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="3_0_matematicas.html">Operaciones matemáticas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -227,7 +236,7 @@
 </details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Estructuras de control</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="8_0_estructurascontrol.html">Introducción a las estructuras de control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="9_0_if.html">Estructuras condicionales: if, elif y else</a></li>
 
@@ -309,7 +318,25 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2/blob/gb-pages/prueba.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/citius70/curso_python_tic2.git/gh-pages?urlpath=tree/untitled2.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2.git/blob/gh-pages/untitled2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -322,6 +349,42 @@
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fcitius70%2Fcurso_python_tic2.git%2Fblob%2Fgh-pages%2Funtitled2.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Deepnote"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Deepnote logo" src="_static/images/logo_deepnote.svg">
+  </span>
+<span class="btn__text-container">Deepnote</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
 </li>
       
   </ul>
@@ -340,7 +403,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -357,7 +420,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2/edit/gb-pages/prueba.ipynb" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git/edit/gh-pages/untitled2.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -374,7 +437,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2/issues/new?title=Issue%20on%20page%20%2Fprueba.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git/issues/new?title=Issue%20on%20page%20%2Funtitled2.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -404,7 +467,7 @@
       
       
       
-      <li><a href="_sources/prueba.ipynb" target="_blank"
+      <li><a href="_sources/untitled2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -467,9 +530,7 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</button>
+
 </div></div>
       
     </div>
@@ -480,23 +541,11 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Ejercicios sobre la estructura if…elif…else</h1>
+    <h1>ijkfseed</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto">Ejercicio resuelto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -506,101 +555,88 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="ejercicios-sobre-la-estructura-if-elif-else">
-<h1>Ejercicios sobre la estructura if…elif…else<a class="headerlink" href="#ejercicios-sobre-la-estructura-if-elif-else" title="Link to this heading">#</a></h1>
-<section id="ejercicio-resuelto">
-<h2>Ejercicio resuelto<a class="headerlink" href="#ejercicio-resuelto" title="Link to this heading">#</a></h2>
-<p><strong>Verificación de mayoría de edad</strong></p>
-<p>Programa que pida al usuario su edad y verifique si es mayor de edad (18 años o más).</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar la edad del usuario</span>
-<span class="n">edad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu edad? &quot;</span><span class="p">))</span>
-
-<span class="c1"># Verificar si es mayor de edad</span>
-<span class="k">if</span> <span class="n">edad</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Puedes votar, eres mayor de edad.&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No puedes votar, eres menor de edad.&quot;</span><span class="p">)</span>
+  <section class="tex2jax_ignore mathjax_ignore" id="ijkfseed">
+<h1>ijkfseed<a class="headerlink" href="#ijkfseed" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Exercise</p>
+<p>Recall that <span class="math notranslate nohighlight">\(n!\)</span> is read as “<span class="math notranslate nohighlight">\(n\)</span> factorial” and defined as<br />
+<span class="math notranslate nohighlight">\(n! = n \times (n - 1) \times \cdots \times 2 \times 1\)</span>.</p>
+<p>Write a function <code class="docutils literal notranslate"><span class="pre">factorial(n)</span></code> that returns <span class="math notranslate nohighlight">\(n!\)</span>.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Exercise</p>
+<p>Escribe una función <code class="docutils literal notranslate"><span class="pre">factorial(n)</span></code> que calcule <span class="math notranslate nohighlight">\(n!\)</span>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ejercicio: implementa <code class="docutils literal notranslate"><span class="pre">factorial(n)</span></code>.</p>
+</div>
+<div class="admonition-exercise admonition">
+<p class="admonition-title">Exercise</p>
+<p>Escribe una función <code class="docutils literal notranslate"><span class="pre">factorial(n)</span></code> que calcule <span class="math notranslate nohighlight">\(n!\)</span>.</p>
+<div class="toggle docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
-<section id="ejercicio-1">
-<h2>Ejercicio 1<a class="headerlink" href="#ejercicio-1" title="Link to this heading">#</a></h2>
-<p><strong>Calificación</strong></p>
-<p>Escribe un programa que pida al usuario una calificación (de 0 a 10) y determine si ha aprobado (5 o más) o no.</p>
+</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="toggle docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar la calificación al usuario</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="c1"># Verificar si ha aprobado</span>
+<span class="n">factorial</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>120
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-<section id="ejercicio-2">
-<h2>Ejercicio 2<a class="headerlink" href="#ejercicio-2" title="Link to this heading">#</a></h2>
-<p><strong>Número par o impar</strong></p>
-<p>Escribe un programa que pida al usuario un número y determine si es par o impar.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar un número al usuario</span>
-
-
-<span class="c1"># Verificar si el número es par o impar. Descomenta las líneas</span>
-</pre></div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Ejercicio</strong></p>
+<p class="sd-card-text">Implementa <code class="docutils literal notranslate"><span class="pre">factorial(n)</span></code>.</p>
 </div>
 </div>
+<div class="toctree-wrapper compound">
 </div>
-</section>
-<section id="ejercicio-3">
-<h2>Ejercicio 3<a class="headerlink" href="#ejercicio-3" title="Link to this heading">#</a></h2>
-<p><strong>Comparación de números</strong></p>
-<p>Escribe un programa que pida al usuario dos números y determine cuál es mayor, o si son iguales.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar dos números al usuario. Convertirlos en float</span>
-
-<span class="c1"># Comparar los números</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="ejercicio-4">
-<h2>Ejercicio 4<a class="headerlink" href="#ejercicio-4" title="Link to this heading">#</a></h2>
-<p><strong>Clasificación de edad</strong></p>
-<p>Escribe un programa que pida al usuario su edad y clasifique en “niño”, “adolescente”, “adulto” o “anciano”.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solicitar la edad del usuario</span>
-
-<span class="c1"># Clasificar la edad</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "citius70/curso_python_tic2.git",
+            ref: "gh-pages",
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "conda-env-ambiente_1-py"
         },
         kernelOptions: {
-            name: "python3",
+            name: "conda-env-ambiente_1-py",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'conda-env-ambiente_1-py'</script>
 
                 </article>
               
@@ -613,20 +649,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="9_0_if.html"
+       href="untitled1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Estructuras condicionales: if, elif y else</p>
+        <p class="prev-next-title">dvsds</p>
       </div>
     </a>
     <a class="right-next"
-       href="10_0_bucles.html"
+       href="2_1_variables_ejercicios.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Bucles</p>
+        <p class="prev-next-title">Ejercicios de variables</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -636,26 +672,6 @@
             </div>
             
             
-              
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-resuelto">Ejercicio resuelto</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-1">Ejercicio 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-2">Ejercicio 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-3">Ejercicio 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicio-4">Ejercicio 4</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
