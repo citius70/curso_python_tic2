@@ -89,7 +89,7 @@
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="Ejercicios de operaciones matemáticas" href="../3_1_matematicas_ejercicios.html" />
+    <link rel="next" title="Ejercicios: Operaciones matemáticas" href="../ejercicios/4_1_matematicas_ejercicios_new.html" />
     <link rel="prev" title="Operaciones matemáticas" href="../3_0_matematicas.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
@@ -211,7 +211,7 @@
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../3_0_matematicas.html">Operaciones matemáticas</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Operaciones matemáticas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../3_1_matematicas_ejercicios.html">Ejercicios de operaciones matemáticas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ejercicios/4_1_matematicas_ejercicios_new.html">Ejercicios: Operaciones matemáticas</a></li>
 </ul>
 </details></li>
 </ul>
@@ -558,11 +558,11 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-matematicas-avanzadas">Funciones matemáticas avanzadas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biblioteca-math">Biblioteca math()</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biblioteca-math">- Biblioteca math()</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-practicos">Ejercicios prácticos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quieres-mas-ejemplos-o-ejercicios-intentalo-tu-mismo">¿Quieres más ejemplos o ejercicios? ¡Inténtalo tú mismo!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biblioteca-statistics">- Biblioteca statistics()</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-de-ejemplo">Ejercicios de ejemplo</a></li>
 </ul>
             </nav>
         </div>
@@ -670,7 +670,7 @@ Potencia: 20 ** 3 = 8000
 <section id="funciones-matematicas-avanzadas">
 <h2>Funciones matemáticas avanzadas<a class="headerlink" href="#funciones-matematicas-avanzadas" title="Link to this heading">#</a></h2>
 <section id="biblioteca-math">
-<h3>Biblioteca math()<a class="headerlink" href="#biblioteca-math" title="Link to this heading">#</a></h3>
+<h3>- Biblioteca math()<a class="headerlink" href="#biblioteca-math" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">math</span></code> es una <strong>biblioteca estándar</strong> (como <code class="docutils literal notranslate"><span class="pre">time</span></code>, <code class="docutils literal notranslate"><span class="pre">calendar</span></code>, <code class="docutils literal notranslate"><span class="pre">statistics</span></code>…), por lo que no se  necesita instalar nada; solo importarla con <code class="docutils literal notranslate"><span class="pre">import</span></code>. Esta biblioteca proporciona funciones matemáticas básicas y algunas avanzadas, como trigonometría, logaritmos, exponenciales, etc.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -879,57 +879,175 @@ Redondeo con round(4.567, 2): 4.57
 </div>
 </section>
 </section>
-<section id="ejercicios-practicos">
-<h2>Ejercicios prácticos<a class="headerlink" href="#ejercicios-practicos" title="Link to this heading">#</a></h2>
-<p>Ejercicio 1: Calcula el área de un círculo con radio 7.
-Ejercicio 2: Calcula la distancia entre dos puntos (x1, y1) y (x2, y2).
-Ejercicio 3: Convierte grados Celsius a Fahrenheit.
-Ejercicio 4: Calcula la media de un conjunto de números.
-Ejercicio 5: Calcula la potencia de un número elevado a otro.
+<section id="biblioteca-statistics">
+<h2>- Biblioteca statistics()<a class="headerlink" href="#biblioteca-statistics" title="Link to this heading">#</a></h2>
+<p>La biblioteca <code class="docutils literal notranslate"><span class="pre">statistics()</span></code> de Python forma parte de la biblioteca estándar, y sirve para hacer <strong>cálculos estadísticos</strong> básicos sobre colecciones de datos numéricos (listas, tuplas, etc.). Se importa así:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">statistics</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>El módulo ´statistics´ ofrece funciones útiles como:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">mean()</span></code>: media aritmética</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">median()</span></code>: mediana (valor central)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mode()</span></code>: moda (valor más frecuente)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stdev()</span></code>: desviación estándar (muestral)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">variance()</span></code>: varianza muestral</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">quantiles()</span></code>: cuantiles (ej. cuartiles, percentiles)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># importar la biblioteca estándar statistics pero con un alias (en este caso stats)</span>
+<span class="kn">import</span> <span class="nn">statistics</span> <span class="k">as</span> <span class="nn">stats</span>
+
+<span class="c1"># Datos de ejemplo. Puntos obtenidos por un jugador de baloncesto en 10 partidos</span>
+<span class="n">datos</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">26</span><span class="p">]</span>
+
+<span class="c1"># Valores estadísticos</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Datos:&quot;</span><span class="p">,</span> <span class="n">datos</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Media:&quot;</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">datos</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mediana:&quot;</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">datos</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Moda:&quot;</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="n">datos</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Varianza:&quot;</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">variance</span><span class="p">(</span><span class="n">datos</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Desviación estándar:&quot;</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">stdev</span><span class="p">(</span><span class="n">datos</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cuartiles:&quot;</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">quantiles</span><span class="p">(</span><span class="n">datos</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Datos: [12, 9, 15, 12, 23, 22, 16, 23, 12, 26]
+Media: 17
+Mediana: 15.5
+Moda: 12
+Varianza: 35.77777777777778
+Desviación estándar: 5.981452814975453
+Cuartiles: [12.0, 15.5, 23.0]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="note dropdown admonition">
+<p class="admonition-title">Todas las funciones de statistics()</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Categoría</strong></p></th>
+<th class="head"><p><strong>Función</strong></p></th>
+<th class="head"><p><strong>Descripción</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Tendencia central</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.mean(data)</span></code></p></td>
+<td><p>Media aritmética</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.fmean(data)</span></code></p></td>
+<td><p>Media rápida en coma flotante</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.median(data)</span></code></p></td>
+<td><p>Mediana (valor central)</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.median_low(data)</span></code></p></td>
+<td><p>Mediana baja (el menor de los dos centrales)</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.median_high(data)</span></code></p></td>
+<td><p>Mediana alta (el mayor de los dos centrales)</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.mode(data)</span></code></p></td>
+<td><p>Moda (valor más frecuente)</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.multimode(data)</span></code></p></td>
+<td><p>Lista con todas las modas</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Dispersión</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.stdev(data)</span></code></p></td>
+<td><p>Desviación estándar muestral</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.pstdev(data)</span></code></p></td>
+<td><p>Desviación estándar poblacional</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.variance(data)</span></code></p></td>
+<td><p>Varianza muestral</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.pvariance(data)</span></code></p></td>
+<td><p>Varianza poblacional</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.quantiles(data,</span> <span class="pre">n=4)</span></code></p></td>
+<td><p>Cuantiles (ej. cuartiles si n=4)</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Medias especiales</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.geometric_mean(data)</span></code></p></td>
+<td><p>Media geométrica</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.harmonic_mean(data)</span></code></p></td>
+<td><p>Media armónica</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Relaciones entre variables</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.correlation(x,</span> <span class="pre">y)</span></code></p></td>
+<td><p>Correlación entre dos listas (≥ Py 3.10)</p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.covariance(x,</span> <span class="pre">y)</span></code></p></td>
+<td><p>Covarianza entre dos listas (≥ Py 3.10)</p></td>
+</tr>
+<tr class="row-even"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statistics.linear_regression(x,y)</span></code></p></td>
+<td><p>Regresión lineal (pendiente e intercepto, ≥ Py 3.10)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="docutils">
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="ejercicios-de-ejemplo">
+<h2>Ejercicios de ejemplo<a class="headerlink" href="#ejercicios-de-ejemplo" title="Link to this heading">#</a></h2>
+<p>Ejercicio 1: Calcula el área de un círculo con radio 7 cm.<br />
+Ejercicio 2: Calcula la distancia entre dos puntos (x1, y1) y (x2, y2).<br />
+Ejercicio 3: Convierte grados Celsius a Fahrenheit.<br />
+Ejercicio 4: Calcula la media de un conjunto de números.<br />
+Ejercicio 5: Calcula la potencia de un número elevado a otro.<br />
 Vamos a resolver uno de ejemplo:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ejemplo para el área de un círculo</span>
+<span class="kn">import</span> <span class="nn">math</span>
 <span class="n">radio</span> <span class="o">=</span> <span class="mi">7</span>
 <span class="n">area</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">radio</span> <span class="o">**</span><span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Área del círculo con radio </span><span class="si">{</span><span class="n">radio</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">area</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Área del círculo con radio </span><span class="si">{</span><span class="n">radio</span><span class="si">}</span><span class="s2"> cm: </span><span class="si">{</span><span class="n">area</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> cm2&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Área del círculo con radio 7: 153.94
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Área del círculo con radio 7 cm: 153.94 cm2
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-<section id="quieres-mas-ejemplos-o-ejercicios-intentalo-tu-mismo">
-<h2>¿Quieres más ejemplos o ejercicios? ¡Inténtalo tú mismo!<a class="headerlink" href="#quieres-mas-ejemplos-o-ejercicios-intentalo-tu-mismo" title="Link to this heading">#</a></h2>
-<p>Recuerda que las matemáticas en programación no solo son cálculos, sino también el análisis y la visualización de datos.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mf">4.7</span>
-<span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>   <span class="c1"># 5</span>
-<span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># 4</span>
-<span class="n">math</span><span class="o">.</span><span class="n">trunc</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># 4</span>
-<span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="p">)</span>  <span class="c1"># 7.0</span>
-</pre></div>
+<div class="important admonition">
+<p class="admonition-title">Conclusión</p>
+<p>Python demuestra ser una herramienta poderosa para matemáticas y estadística. Los módulos math y statistics ofrecen:</p>
+<p>✅ Cálculos precisos - Operaciones matemáticas avanzadas<br />
+✅ Análisis estadístico - Medidas de tendencia central y dispersión<br />
+✅ Eficiencia - Procesamiento rápido y confiable<br />
+✅ Versatilidad - Aplicable en ciencia, ingeniería y data science</p>
+<p>Python se consolida como el lenguaje ideal para análisis cuantitativo. 🚀</p>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>7.0
-</pre></div>
-</div>
-</div>
-</div>
-<dl class="simple glossary">
-<dt id="term-suma">suma<a class="headerlink" href="#term-suma" title="Link to this term">#</a></dt><dt id="term-An-amazing-markup-language-that-supports-glossaries">: An amazing markup language that supports glossaries<a class="headerlink" href="#term-An-amazing-markup-language-that-supports-glossaries" title="Link to this term">#</a></dt><dd></dd>
-</dl>
-<dl class="simple glossary">
-<dt id="term-MyST">MyST<a class="headerlink" href="#term-MyST" title="Link to this term">#</a></dt><dt id="term-0">: An amazing markup language that supports glossaries<a class="headerlink" href="#term-0" title="Link to this term">#</a></dt><dd></dd>
-</dl>
-<p>You can use <a class="reference internal" href="#term-MyST"><span class="xref std std-term">MyST</span></a> to create glossaries.</p>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -975,11 +1093,11 @@ Vamos a resolver uno de ejemplo:</p>
       </div>
     </a>
     <a class="right-next"
-       href="../3_1_matematicas_ejercicios.html"
+       href="../ejercicios/4_1_matematicas_ejercicios_new.html"
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Ejercicios de operaciones matemáticas</p>
+        <p class="prev-next-title">Ejercicios: Operaciones matemáticas</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1006,11 +1124,11 @@ Vamos a resolver uno de ejemplo:</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funciones-matematicas-avanzadas">Funciones matemáticas avanzadas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biblioteca-math">Biblioteca math()</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biblioteca-math">- Biblioteca math()</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-practicos">Ejercicios prácticos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quieres-mas-ejemplos-o-ejercicios-intentalo-tu-mismo">¿Quieres más ejemplos o ejercicios? ¡Inténtalo tú mismo!</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biblioteca-statistics">- Biblioteca statistics()</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ejercicios-de-ejemplo">Ejercicios de ejemplo</a></li>
 </ul>
   </nav></div>
 

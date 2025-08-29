@@ -30,8 +30,8 @@ number1 = float(input("Ingresa el primer número: "))
 ------------------
 
 
-[1;31m---------------------------------------------------------------------------[0m
-[1;31mStdinNotImplementedError[0m                  Traceback (most recent call last)
+[1;31m-----------------------------------------------------------------------[0m
+[1;31mStdinNotImplementedError[0m              Traceback (most recent call last)
 Cell [1;32mIn[3], line 3[0m
 [0;32m      1[0m [38;5;66;03m# Solicitar dos números al usuario.[39;00m
 [0;32m      2[0m [38;5;66;03m# Te dejo la primera línea[39;00m
