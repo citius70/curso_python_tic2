@@ -13,7 +13,7 @@ language: es
 execute:
   execute_notebooks: auto
 
-# Define the name of the latex output file for PDF builds
+# Define the name of the latex output file for PDF build
 latex:
   latex_documents:
     targetname: book.tex
