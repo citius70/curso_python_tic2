@@ -18,24 +18,22 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-# Solicitar dos números al usuario.
-# Te dejo la primera línea
-number1 = float(input("Ingresa el primer número: "))
+# Solicitar el nombre y la ciudad en la que nació el usuario
+nombre = input("¿Cuál es tu nombre?: ")
+ciudad = input("¿Dónde naciste?: ")
 
-# Calcular la suma almacenándola en la variable sum.
-
-
-# Imprimir el resultado con f-string de print.
-
+# Imprimir una frase personalizado
+print(f"{nombre} nació en {ciudad}." )
 ------------------
 
 
-[1;31m-----------------------------------------------------------------------[0m
-[1;31mStdinNotImplementedError[0m              Traceback (most recent call last)
-Cell [1;32mIn[3], line 3[0m
-[0;32m      1[0m [38;5;66;03m# Solicitar dos números al usuario.[39;00m
-[0;32m      2[0m [38;5;66;03m# Te dejo la primera línea[39;00m
-[1;32m----> 3[0m number1 [38;5;241m=[39m [38;5;28mfloat[39m([38;5;28minput[39m([38;5;124m"[39m[38;5;124mIngresa el primer número: [39m[38;5;124m"[39m))
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mStdinNotImplementedError[0m                  Traceback (most recent call last)
+Cell [1;32mIn[1], line 2[0m
+[0;32m      1[0m [38;5;66;03m# Solicitar el nombre y la ciudad en la que nació el usuario[39;00m
+[1;32m----> 2[0m nombre [38;5;241m=[39m [38;5;28minput[39m([38;5;124m"[39m[38;5;124m¿Cuál es tu nombre?: [39m[38;5;124m"[39m)
+[0;32m      3[0m ciudad [38;5;241m=[39m [38;5;28minput[39m([38;5;124m"[39m[38;5;124m¿Dónde naciste?: [39m[38;5;124m"[39m)
+[0;32m      5[0m [38;5;66;03m# Imprimir una frase personalizado[39;00m
 
 File [1;32m~\anaconda3\envs\ambiente_1\Lib\site-packages\ipykernel\kernelbase.py:1281[0m, in [0;36mKernel.raw_input[1;34m(self, prompt)[0m
 [0;32m   1279[0m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m [38;5;28mself[39m[38;5;241m.[39m_allow_stdin:
