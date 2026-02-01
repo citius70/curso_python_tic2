@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="es" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css?v=982b99e0" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=fb9458d3" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -63,6 +64,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/translations.js?v=d190bf04"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -85,12 +87,12 @@
     <script src="_static/scripts/fontawesome.js?v=9b125980"></script>
     <script src="_static/scripts/pydata-sphinx-theme.js?v=a1eb5d9f"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
     <link rel="next" title="Ejercicios sobre la función input()" href="6_1_input_ejercicios.html" />
     <link rel="prev" title="Ejercicios sobre la función print()" href="5_1_print_ejercicios.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="es"/>
   <meta name="docsearch:version" content="" />
   </head>
   
@@ -99,12 +101,12 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
 
   
   <dialog id="pst-search-dialog">
@@ -127,7 +129,7 @@
   </dialog>
 
   <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
 </div>
 
   
@@ -177,9 +179,9 @@
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
  <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
+ <span class="search-button__default-text">Búsqueda</span>
  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
 </button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
@@ -194,18 +196,25 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Introducción</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_0_introduccion.html">¿Qué es Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_v1/01_0_introduccion_new.html">¿Qué es Python?</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Datos</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_0_variables_tiposdatos.html">Variables y tipos de datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_1_variables_ejercicios.html">Ejercicios de variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_0_variables_tiposdatos.html">Variables y tipos de datos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="docs_v1/02_0_variables_new.html">Variables</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ejercicios/2_1_variables_ejercicios_new.html">Ejercicios: Variables</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="3_0_matematicas.html">Operaciones matemáticas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="3_1_matematicas_ejercicios.html">Ejercicios de operaciones matemáticas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="docs_v1/03_0_datos_new.html">Tipos de datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ejercicios/3_0_datos_ejercicios_new.html">Ejercicios: Tipos de datos</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="3_0_matematicas.html">Operaciones matemáticas</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="docs_v1/04_0_matematicas_new.html">Operaciones matemáticas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ejercicios/4_1_matematicas_ejercicios_new.html">Ejercicios: Operaciones matemáticas</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_v1/05_0_comentarios_new.html">Comentarios</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Funciones básicas</span></p>
 <ul class="current nav bd-sidenav">
@@ -309,7 +318,25 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2/blob/gb-pages/6_0_input.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/citius70/curso_python_tic2.git/gh-pages?urlpath=tree/6_0_input.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2.git/blob/gh-pages/6_0_input.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -322,6 +349,42 @@
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fcitius70%2Fcurso_python_tic2.git%2Fblob%2Fgh-pages%2F6_0_input.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Deepnote"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Deepnote logo" src="_static/images/logo_deepnote.svg">
+  </span>
+<span class="btn__text-container">Deepnote</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
 </li>
       
   </ul>
@@ -340,9 +403,9 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
+   title="Repositorio de origen"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -357,7 +420,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2/edit/gb-pages/6_0_input.ipynb" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git/edit/gh-pages/6_0_input.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -374,9 +437,9 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2/issues/new?title=Issue%20on%20page%20%2F6_0_input.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git/issues/new?title=Issue%20on%20page%20%2F6_0_input.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
+   title="Abrir un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -397,7 +460,7 @@
 
 
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
@@ -406,7 +469,7 @@
       
       <li><a href="_sources/6_0_input.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
+   title="Descargar archivo fuente"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -424,7 +487,7 @@
       <li>
 <button onclick="window.print()"
   class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
+  title="Imprimir en PDF"
   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -444,7 +507,7 @@
 
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
+  title="Modo de pantalla completa"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
@@ -457,14 +520,14 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
 </button>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
 
@@ -495,60 +558,37 @@
   <section class="tex2jax_ignore mathjax_ignore" id="funcion-input">
 <h1>Función input()<a class="headerlink" href="#funcion-input" title="Link to this heading">#</a></h1>
 <p>La función <code class="docutils literal notranslate"><span class="pre">input()</span></code> en Python es una herramienta clave para la <strong>interacción con el usuario</strong>, permitiendo que los programas <strong>reciban datos directamente desde el usuario a través de la entrada estándar, como el teclado</strong>. Esta función solicita al usuario que introduzca información, mostrando un mensaje opcional en la pantalla que invita a la persona a escribir algo.</p>
-<p>El valor que devuelve <code class="docutils literal notranslate"><span class="pre">input()</span></code> es frecuentemente asignado a una <code class="docutils literal notranslate"><span class="pre">variable</span></code> para ser utilizado más adelante en el programa. Por ejemplo, name = input(’¿Cuál es tu nombre?\n’) muestra la pregunta al usuario y guarda la respuesta en la variable name</p>
+<p>El valor que devuelve <code class="docutils literal notranslate"><span class="pre">input()</span></code> es frecuentemente asignado a una <code class="docutils literal notranslate"><span class="pre">variable</span></code> para ser utilizado más adelante en el programa. Por ejemplo, name = input(”¿Cuál es tu nombre?\n”) muestra la pregunta al usuario y guarda la respuesta en la variable name</p>
 <p>He aquí un ejemplo simple:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuál es tu nombre?&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>En este código, <code class="docutils literal notranslate"><span class="pre">input(&quot;¿Cuál</span> <span class="pre">es</span> <span class="pre">tu</span> <span class="pre">nombre?</span> <span class="pre">&quot;)</span></code> imprime la cadena “¿Cuál es tu nombre? “ en la consola y luego espera que el usuario escriba algo. Lo que el usuario escriba es devuelto por la función input como una cadena, y en este caso se está almacenando en la variable <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+<p>En este código, <code class="docutils literal notranslate"><span class="pre">input(&quot;¿Cuál</span> <span class="pre">es</span> <span class="pre">tu</span> <span class="pre">nombre?</span> <span class="pre">&quot;)</span></code> imprime la cadena «¿Cuál es tu nombre? « en la consola y luego espera que el usuario escriba algo. Lo que el usuario escriba es devuelto por la función input como una cadena, y en este caso se está almacenando en la variable <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
 <p>Después de que el usuario escribe su nombre y presiona enter, el programa continúa con la siguiente línea, que imprime el valor de la variable <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
 <div class="warning admonition">
 <p class="admonition-title">Atención</p>
 <p>Es importante destacar que la función <code class="docutils literal notranslate"><span class="pre">input()</span></code> siempre devuelve una <strong>cadena de texto</strong>…</p>
 </div>
 <p>…, entonces, si deseas usar la entrada como un <strong>entero</strong> o un <strong>flotante</strong> (por ejemplo, si estás pidiendo al usuario que introduzca su edad), necesitarás convertir el valor devuelto al tipo deseado utilizando la función <code class="docutils literal notranslate"><span class="pre">int()</span></code> o <code class="docutils literal notranslate"><span class="pre">float()</span></code>, así:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuántos años tienes? &quot;</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuántos años tienes? &quot;</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El próximo año tendrás&quot;</span><span class="p">,</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;¿Cuántos años tienes? &quot;</span><span class="p">))</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El próximo año tendrás&quot;</span><span class="p">,</span> <span class="n">age</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-
-<span class="nn">File ~\anaconda3\envs\ambiente_1\Lib\site-packages\ipykernel\kernelbase.py:1281,</span> in <span class="ni">Kernel.raw_input</span><span class="nt">(self, prompt)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1279</span> <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_allow_stdin</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">1280</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1281</span>     <span class="k">raise</span> <span class="n">StdinNotImplementedError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1282</span> <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_input_request</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">1283</span>     <span class="nb">str</span><span class="p">(</span><span class="n">prompt</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1284</span>     <span class="bp">self</span><span class="o">.</span><span class="n">_parent_ident</span><span class="p">[</span><span class="s2">&quot;shell&quot;</span><span class="p">],</span>
-<span class="g g-Whitespace">   </span><span class="mi">1285</span>     <span class="bp">self</span><span class="o">.</span><span class="n">get_parent</span><span class="p">(</span><span class="s2">&quot;shell&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">   </span><span class="mi">1286</span>     <span class="n">password</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">1287</span> <span class="p">)</span>
-
-<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
+<p>En este código, <code class="docutils literal notranslate"><span class="pre">int(input(&quot;¿Cuántos</span> <span class="pre">años</span> <span class="pre">tienes?</span> <span class="pre">&quot;))</span></code> pide al usuario que introduzca su edad, luego convierte su entrada de una cadena a un entero. Esto permite al programa hacer aritmética con la edad del usuario, como sumar 1 para calcular su edad el próximo año.</p>
+<div class="info admonition">
+<p class="admonition-title">INFO</p>
+<p>La función <code class="docutils literal notranslate"><span class="pre">input()</span></code> permite al usuario ingresar datos desde el teclado y devuelve ese valor como una cadena de texto que, por lo general, se guarda en una variable.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">variable</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;mensaje&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</div>
-<p>En este código, <code class="docutils literal notranslate"><span class="pre">int(input(&quot;¿Cuántos</span> <span class="pre">años</span> <span class="pre">tienes?</span> <span class="pre">&quot;))</span></code> pide al usuario que introduzca su edad, luego convierte su entrada de una cadena a un entero. Esto permite al programa hacer aritmética con la edad del usuario, como sumar 1 para calcular su edad el próximo año.</p>
 <p>Otro ejemplo típico es pedir al usuario que introduzca varios números para después mostrar el resultado de alguna operación matemática. Fíjate en como hay que transformar el valor que devuelve input en entero (int) o decimal (float).</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">numA</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduzca el primer número: &quot;</span><span class="p">))</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">numA</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduzca el primer número: &quot;</span><span class="p">))</span>
 <span class="n">numB</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Introduzca el segundo número: &quot;</span><span class="p">))</span>
 <span class="nb">sum</span> <span class="o">=</span> <span class="n">numA</span> <span class="o">+</span> <span class="n">numB</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
 </div>
 <div class="toctree-wrapper compound">
 </div>
@@ -558,8 +598,8 @@
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "citius70/curso_python_tic2.git",
+            ref: "gh-pages",
         },
         codeMirrorConfig: {
             theme: "abcdef",
@@ -586,18 +626,18 @@
 <div class="prev-next-area">
     <a class="left-prev"
        href="5_1_print_ejercicios.html"
-       title="previous page">
+       title="página anterior">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-subtitle">anterior</p>
         <p class="prev-next-title">Ejercicios sobre la función print()</p>
       </div>
     </a>
     <a class="right-next"
        href="6_1_input_ejercicios.html"
-       title="next page">
+       title="siguiente página">
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-subtitle">siguiente</p>
         <p class="prev-next-title">Ejercicios sobre la función input()</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
@@ -618,7 +658,7 @@
   <div class="footer-item">
     
 <p class="component-author">
-By Alberto Durán Pérez
+Por Alberto Durán Pérez
 </p>
 
   </div>

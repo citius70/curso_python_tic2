@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="./" >
+<html lang="es" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -36,6 +36,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/exercise.css?v=982b99e0" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=fb9458d3" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
@@ -63,6 +64,7 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="_static/translations.js?v=d190bf04"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
@@ -85,12 +87,12 @@
     <script src="_static/scripts/fontawesome.js?v=9b125980"></script>
     <script src="_static/scripts/pydata-sphinx-theme.js?v=a1eb5d9f"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Variables y tipos de datos" href="2_0_variables_tiposdatos.html" />
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="¿Qué es Python? 🐍" href="docs_v1/01_0_introduccion_new.html" />
     <link rel="prev" title="Curso de Python" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:language" content="es"/>
   <meta name="docsearch:version" content="" />
   </head>
   
@@ -99,12 +101,12 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
 
   
   <dialog id="pst-search-dialog">
@@ -127,7 +129,7 @@
   </dialog>
 
   <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
 </div>
 
   
@@ -177,9 +179,9 @@
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn search-button-field search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
  <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
+ <span class="search-button__default-text">Búsqueda</span>
  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
 </button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
@@ -195,11 +197,18 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. Introducción</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">¿Qué es Python?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_v1/01_0_introduccion_new.html">¿Qué es Python? 🐍</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Datos</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="2_0_variables_tiposdatos.html">Variables y tipos de datos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="2_1_variables_ejercicios.html">Ejercicios de variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_0_variables_tiposdatos.html">Variables y tipos de datos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="docs_v1/02_0_variables_new.html">Variables</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ejercicios/2_1_variables_ejercicios_new.html">Ejercicios: Variables</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="docs_v1/03_0_datos_new.html">Tipos de datos</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="untitled1.html">dvsds</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="ejercicios/3_0_datos_ejercicios_new.html">Ejercicios sobre Tipos de Datos en Python</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="3_0_matematicas.html">Operaciones matemáticas</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -309,7 +318,25 @@
       
       
       
-      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2/blob/gb-pages/1_0_introduccion.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/citius70/curso_python_tic2.git/gh-pages?urlpath=tree/1_0_introduccion.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/citius70/curso_python_tic2.git/blob/gh-pages/1_0_introduccion.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -322,6 +349,42 @@
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fcitius70%2Fcurso_python_tic2.git%2Fblob%2Fgh-pages%2F1_0_introduccion.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Deepnote"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Deepnote logo" src="_static/images/logo_deepnote.svg">
+  </span>
+<span class="btn__text-container">Deepnote</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
 </li>
       
   </ul>
@@ -340,9 +403,9 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
+   title="Repositorio de origen"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -357,7 +420,7 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2/edit/gb-pages/1_0_introduccion.ipynb" target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git/edit/gh-pages/1_0_introduccion.ipynb" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -374,9 +437,9 @@
       
       
       
-      <li><a href="https://github.com/citius70/curso_python_tic2/issues/new?title=Issue%20on%20page%20%2F1_0_introduccion.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/citius70/curso_python_tic2.git/issues/new?title=Issue%20on%20page%20%2F1_0_introduccion.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
+   title="Abrir un problema"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -397,7 +460,7 @@
 
 
 <div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
@@ -406,7 +469,7 @@
       
       <li><a href="_sources/1_0_introduccion.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
+   title="Descargar archivo fuente"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -424,7 +487,7 @@
       <li>
 <button onclick="window.print()"
   class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
+  title="Imprimir en PDF"
   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
@@ -444,7 +507,7 @@
 
 <button onclick="toggleFullScreen()"
   class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
+  title="Modo de pantalla completa"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
@@ -457,14 +520,14 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Tema" data-bs-title="Tema"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Claro"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Oscuro"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="Sistema"></i>
 </button>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -486,13 +549,12 @@
         <div id="jb-print-toc">
             
             <div>
-                <h2> Contents </h2>
+                <h2> Contenido </h2>
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#justificacion-de-su-estudio">Justificación de su estudio 👨‍💻</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas">Características 👀</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ventajas-de-python">Ventajas de Python 😍</a></li>
 </ul>
             </nav>
         </div>
@@ -525,23 +587,7 @@ Esto nos permite probar partes del código directamente, por ejemplo, usando un 
 </ul>
 </li>
 </ul>
-<p>2️⃣<strong>Python es un lenguaje orientado a objetos</strong></p>
-<ul class="simple">
-<li><p>En Python, todo es un objeto. Esto significa que:</p>
-<ul>
-<li><p>Variables, funciones, números, cadenas de texto, e incluso listas son objetos.
-Los objetos tienen propiedades (datos asociados) y métodos (funciones que realizan acciones sobre los datos).</p></li>
-</ul>
-</li>
-<li><p>La Programación Orientada a Objetos (POO) es un estilo de programación que organiza el código en piezas reutilizables llamadas clases y objetos. Este enfoque tiene muchas ventajas, como:</p>
-<ul>
-<li><p>Facilitar la modularidad del código.</p></li>
-<li><p>Promover la reutilización.</p></li>
-<li><p>Encapsular datos y funciones relacionadas.</p></li>
-</ul>
-</li>
-</ul>
-<p>3️⃣<strong>Python es multiplataforma</strong></p>
+<p>2️⃣<strong>Python es multiplataforma</strong></p>
 <ul class="simple">
 <li><p>Python es compatible con varios sistemas operativos, como:</p>
 <ul>
@@ -553,16 +599,31 @@ Los objetos tienen propiedades (datos asociados) y métodos (funciones que reali
 </ul>
 <p>¿Qué significa esto? Un programa escrito en Python puede ejecutarse en cualquiera de estos sistemas operativos sin necesidad de modificar el código o con cambios mínimos.
 Esto es especialmente útil si trabajas en un equipo donde cada persona utiliza un sistema operativo diferente.</p>
-</section>
-<section id="ventajas-de-python">
-<h2>Ventajas de Python 😍<a class="headerlink" href="#ventajas-de-python" title="Link to this heading">#</a></h2>
+<p>3️⃣<strong>Python es un lenguaje de alto nivel</strong></p>
+<ul>
+<li><p>Python es un lenguaje de alto nivel, lo que significa que está diseñado para ser <strong>fácil de leer y escribir</strong> por los humanos. Esto contrasta con los lenguajes de bajo nivel, que están más cerca del hardware y son más difíciles de entender.</p>
 <p>La principal ventaja de Python es apostar fuertemente por la <strong>sencillez</strong>. Python parte una premisa base: <strong>“más simple es mejor”</strong> (parece una obviedad, pero no todos los lenguajes siguen esta filosofía).</p>
-<p>Es decir, Python se enfoca en la productividad del desarrollador y en legibilidad del código. Esto sigue una filosofía que han llamado “The Zen of Python”, que básicamente promueve la simplicidad y claridad al programar.</p>
-<p>Por otro lado, Python es un lenguaje <strong>multipropósito</strong> (bueno, como casi todos hoy en día). Esto significa que, aunque es más usado en ciertos ámbitos, nada nos impide usarlo para cualquier tipo de programas o tareas. Se utiliza para la creación de páginas web, análisis de datos, machine learning…</p>
-<p>Otra gran ventaja de Python es su amplia <strong>biblioteca estándar</strong>, que proporciona módulos y funciones para realizar diversas tareas. Esto facilita el desarrollo de aplicaciones sin tener que reinventar la rueda.</p>
-<p>Finalmente, la mayor ventaja que tiene Python (si, es su mayor ventaja) es la gran <strong>popularidad</strong> que ha adquirido el lenguaje. Esto le ha generado una gran comunidad.</p>
-<p>Fruto de ello, existe una gran cantidad de recursos, documentaciones, tutoriales, y bibliotecas disponibles, facilitando el aprendizaje y la resolución de problemas.</p>
-<p>Si tienes una necesidad, lo más seguro es que alguien ya haya hecho una biblioteca para resolverlo en Python.</p>
+</li>
+<li><p>Python utiliza una <strong>sintaxis clara y concisa</strong>, lo que facilita la escritura y comprensión del código. Por ejemplo, en Python no es necesario usar punto y coma al final de cada línea, lo que hace que el código sea más limpio y legible.</p></li>
+</ul>
+<p>4️⃣<strong>Python es un lenguaje versátil y de propósito general</strong></p>
+<ul class="simple">
+<li><p>Python se puede utilizar para una amplia variedad de tareas, como:</p>
+<ul>
+<li><p>Desarrollo web</p></li>
+<li><p>Análisis de datos</p></li>
+<li><p>Aprendizaje automático</p></li>
+<li><p>Automatización de tareas</p></li>
+<li><p>Desarrollo de aplicaciones de escritorio</p></li>
+</ul>
+</li>
+<li><p>Esta versatilidad lo convierte en una excelente opción para principiantes y profesionales por igual, ya que permite aprender un solo lenguaje y aplicarlo en diferentes áreas de la programación.</p></li>
+</ul>
+<p>6️⃣ <strong>Python tiene una gran comunidad y recursos disponibles</strong></p>
+<ul class="simple">
+<li><p>Python cuenta con una comunidad activa y en crecimiento, lo que significa que hay muchos recursos disponibles</p></li>
+<li><p>Además, Python tiene una gran cantidad de bibliotecas y módulos que facilitan tareas comunes, como trabajar con archivos, realizar cálculos matemáticos o manipular datos. Estas bibliotecas están diseñadas para ser fáciles de usar y entender, lo que permite a los programadores centrarse en resolver problemas en lugar de preocuparse por los detalles de implementación.</p></li>
+</ul>
 <div class="note admonition">
 <p class="admonition-title">Python es…</p>
 <ul class="simple">
@@ -579,21 +640,21 @@ Esto es especialmente útil si trabajas en un equipo donde cada persona utiliza 
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "citius70/curso_python_tic2.git",
+            ref: "gh-pages",
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "conda-env-ambiente_1-py"
+            mode: "python"
         },
         kernelOptions: {
-            name: "conda-env-ambiente_1-py",
+            name: "python3",
             path: "./."
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'conda-env-ambiente_1-py'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -607,19 +668,19 @@ Esto es especialmente útil si trabajas en un equipo donde cada persona utiliza 
 <div class="prev-next-area">
     <a class="left-prev"
        href="intro.html"
-       title="previous page">
+       title="página anterior">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-subtitle">anterior</p>
         <p class="prev-next-title">Curso de Python</p>
       </div>
     </a>
     <a class="right-next"
-       href="2_0_variables_tiposdatos.html"
-       title="next page">
+       href="docs_v1/01_0_introduccion_new.html"
+       title="siguiente página">
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Variables y tipos de datos</p>
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">¿Qué es Python? 🐍</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -636,13 +697,12 @@ Esto es especialmente útil si trabajas en un equipo donde cada persona utiliza 
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
+    <i class="fa-solid fa-list"></i> Contenido
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#justificacion-de-su-estudio">Justificación de su estudio 👨‍💻</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#caracteristicas">Características 👀</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ventajas-de-python">Ventajas de Python 😍</a></li>
 </ul>
   </nav></div>
 
@@ -657,7 +717,7 @@ Esto es especialmente útil si trabajas en un equipo donde cada persona utiliza 
   <div class="footer-item">
     
 <p class="component-author">
-By Alberto Durán Pérez
+Por Alberto Durán Pérez
 </p>
 
   </div>

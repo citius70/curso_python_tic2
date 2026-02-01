@@ -1,0 +1,68 @@
+# Book settings
+title: "Python para TIC II"
+author: "Alberto Durán Pérez"
+copyright: "2025"
+logo: logo.png
+only_build_toc_files: true
+language: es  # ✅ Idioma principal
+
+# Execute notebooks
+execute:
+  execute_notebooks: auto
+
+# PDF build settings
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Launch buttons
+launch_buttons:
+  notebook_interface: "classic"
+  binderhub_url: "https://mybinder.org"
+  colab_url: "https://colab.research.google.com"
+  deepnote_url: "https://deepnote.com"
+  thebe: true
+
+# Bibliography
+bibtex_bibfiles:
+  - references.bib
+
+# Repository info
+repository:
+  url: https://github.com/citius70/curso_python_tic2.git/
+  branch: gh-pages
+
+# HTML settings
+html:
+  use_issues_button: true
+  use_repository_button: true
+  use_edit_page_button: true
+  use_multitoc_numbering: true
+  home_page_in_navbar: true
+  extra_navbar: ""
+  extra_footer: ""
+
+
+# Comments
+comments:
+  hypothesis: false
+  utterances: false
+  announcement: ""
+
+# ✅ CONFIGURACIÓN SPHINX CORREGIDA:
+sphinx:
+  extra_extensions:
+    - sphinx_exercise
+  config:
+    language: es  # ✅ Idioma para Sphinx
+    locale_dirs: ["locale/"]  # ✅ Directorio para traducciones
+    # Elimina estas líneas que causan warnings:
+    # incremental_build: true
+    # always_document: []
+
+# ✅ CONFIGURACIÓN MYST CORREGIDA:
+myst:
+  enable_extensions:
+    - colon_fence
+    - dollarmath
+    - linkify

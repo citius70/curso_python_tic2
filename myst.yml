@@ -1,0 +1,98 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: 01beba2a-6e39-4849-a7cf-0502b00b1b01
+  title: Python para TIC II  # Título del libro
+  subtitle: Bloque de Programación
+  copyright: "2025"  # Año de copyright
+  description: Teoría y práctica
+  # date: 2026-01-01
+  authors: 
+    - name: Alberto Durán Pérez
+      affiliations:
+        - Departamento de Tecnología
+        - IES Frei Martín Sarmiento
+  github: https://github.com/citius70/curso_python_tic2
+  license: CC-BY-4.0
+  open_access: true
+  # To autogenerate a Table of Contents, run "jupyter book init --write-toc"
+  # Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+  toc:
+    - file: ./docs_v1/intro.md
+    - file: ./docs_v1/01_introduccion_new.ipynb
+    - title: 1. Datos
+      children:
+        - title: 1.1. Variables
+          children:
+          - file: ./docs_v1/02_variables_new.ipynb
+          - file: ./ejercicios/02_variables_ejercicios_new.ipynb
+        - title: 1.2. Tipos de datos
+          children:
+          - file: ./docs_v1/03_datos_new.ipynb
+          - file: ./ejercicios/03_datos_ejercicios_new.ipynb
+    #     - file: docs_v1/04_matematicas_new.ipynb
+    #       children:
+    #       - file: ejercicios/04_matematicas_ejercicios_new.ipynb
+    #     - file: docs_v1/05_comentarios_new.ipynb
+    #       children:
+    #       - file: ejercicios/05_comentarios_ejercicios_new.ipynb
+    # - title: 2. Funciones básicas
+    #   children:
+    #     - file: docs_v1/06_print_new.ipynb
+    #       children:
+    #       - file: ejercicios/06_print_ejercicios_new.ipynb
+    #     - file: docs_v1/07_input_new.ipynb
+    #       children: 
+    #       - file: ejercicios/07_input_ejercicios_new.ipynb
+    #     - file: docs_v1/08_funciones_new.ipynb
+    #       children:
+    #       - file: ejercicios/08_funciones_ejercicios_new.ipynb
+    # - title: 3. Estructuras de control
+    #   children:
+    #     - file: docs_v1/08_estructurascontrol_new.ipynb
+    #     - title: 4.1. Condicionales     
+    #       children:
+    #       - file: docs_v1/09_if_new.ipynb
+    #         children:
+    #         - file: ejercicios/09_if_ejercicios_new.ipynb
+    #     - title: 4.2. Bucles
+    #       children:
+    #       - file: docs_v1/10_bucles_new.ipynb
+      #     - file: docs_v1/11_for_new.ipynb
+      #     - file: docs_v1/12_while_new.ipynb
+
+    #         - file: 11_0_for.ipynb
+    #         - file: 11_1_for_ejercicios.ipynb
+    #         - file: 12_0_while.ipynb
+    #         - file: 12_1_while_ejercicios.ipynb
+
+    # - title: 5. Estructuras de datos
+    #   children:
+    #     - file: 13_0_estructurasdatos.ipynb
+    #     - file: 14_0_listas.ipynb
+    #       sections:
+    #         - file: 14_1_listas_ejercicios.ipynb
+    #     - file: 15_0_diccionarios.ipynb
+    #       sections:
+    #         - file: 15_1_diccionarios_ejercicios.ipynb
+site:
+  template: book-theme
+  options:
+    # hide_toc: true
+    # favicon: favicon.ico
+  logo: ./_images/logo.png
+  # style: ./_static/custom.css
+  # nav:
+  #   - title: Internal page
+  #     url: /website-metadata
+  # actions:
+  #   - title: A URL
+  #     url: https://mystmd.org
+  design:
+  #   theme: auto
+  #   primary: #3b82f6
+    typography:
+  #     body: Georgia
+  #     headings: Poppins
+        code: "JetBrains Mono"
