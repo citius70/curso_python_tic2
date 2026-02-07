@@ -32,9 +32,9 @@ project:
           - file: ./docs_v1/03_datos_new.ipynb
           - file: ./ejercicios/03_datos_ejercicios_new.ipynb
         - title: 1.3. Operaciones matemáticas
-           children:
-           - file: ./docs_v1/04_matematicas_new.ipynb
-           - file: ./ejercicios/04_matematicas_ejercicios_new.ipynb
+          children:
+          - file: ./docs_v1/04_matematicas_new.ipynb
+          - file: ./ejercicios/04_matematicas_ejercicios_new.ipynb
     #      - file: docs_v1/04_matematicas_new.ipynb
     #       children:
     #       - file: ejercicios/04_matematicas_ejercicios_new.ipynb
