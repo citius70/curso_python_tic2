@@ -97,6 +97,6 @@ site:
   #   theme: auto
   #   primary: #3b82f6
     typography:
-  #     body: Georgia
+        body: Georgia
   #     headings: Poppins
         code: "JetBrains Mono"
