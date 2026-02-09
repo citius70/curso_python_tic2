@@ -35,12 +35,15 @@ project:
           children:
           - file: ./docs_v1/04_matematicas_new.ipynb
           - file: ./ejercicios/04_matematicas_ejercicios_new.ipynb
-    #      - file: docs_v1/04_matematicas_new.ipynb
-    #       children:
-    #       - file: ejercicios/04_matematicas_ejercicios_new.ipynb
-    #     - file: docs_v1/05_comentarios_new.ipynb
-    #       children:
-    #       - file: ejercicios/05_comentarios_ejercicios_new.ipynb
+        - title: 1.4. Comentarios
+          children:
+          - file: docs_v1/05_comentarios_new.ipynb
+          - file: ./ejercicios/05_comentarios_ejercicios_new.ipynb
+    - title: 2. Funciones básicas
+      children:
+        - title: 2.1. Función print()
+          children: 
+          - file: ./docs_v1/06_print_new.ipynb
     # - title: 2. Funciones básicas
     #   children:
     #     - file: docs_v1/06_print_new.ipynb
