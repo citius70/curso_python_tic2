@@ -45,6 +45,10 @@ project:
           children: 
           - file: ./docs_v1/06_print_new.ipynb
           - file: ./ejercicios/06_print_ejercicios_new.ipynb
+        - title: 2.2. Función input()
+          children: 
+          - file: ./docs_v1/07_input_new.ipynb
+          - file: ./ejercicios/07_input_ejercicios_new.ipynb
     # - title: 2. Funciones básicas
     #   children:
     #     - file: docs_v1/06_print_new.ipynb
