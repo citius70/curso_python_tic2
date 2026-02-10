@@ -44,6 +44,7 @@ project:
         - title: 2.1. Función print()
           children: 
           - file: ./docs_v1/06_print_new.ipynb
+          - file: ./ejercicios/06_print_ejercicios_new.ipynb
     # - title: 2. Funciones básicas
     #   children:
     #     - file: docs_v1/06_print_new.ipynb
