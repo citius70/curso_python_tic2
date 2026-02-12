@@ -48,7 +48,7 @@ project:
         - title: 2.2. Función input()
           children: 
           - file: ./docs_v1/07_input_new.ipynb
-          - file: ./ejercicios/07_input_ejercicios_new.
+          - file: ./ejercicios/07_input_ejercicios_new.ipynb
     - title: 3. Estructuras de control
       children:
         - title: 3.1. Introducción a las estructuras de control
