@@ -48,10 +48,18 @@ project:
         - title: 2.2. Función input()
           children: 
           - file: ./docs_v1/07_input_new.ipynb
-          - file: ./ejercicios/07_input_ejercicios_new.ipynb
-    # - title: 2. Funciones básicas
-    #   children:
-    #     - file: docs_v1/06_print_new.ipynb
+          - file: ./ejercicios/07_input_ejercicios_new.
+    - title: 3. Estructuras de control
+      children:
+        - title: 3.1. Introducción a las estructuras de control
+          children:
+          - file: ./docs_v1/08_estructurascontrol_new.ipynb
+        - title: 3.2. Condicionales
+          children:
+          - file: ./docs_v1/09_if_new.ipynb
+          - file: ./ejercicios/09_if_ejercicios_new.ipynb
+    #      children:
+    #     - file: ./ejercicios/09_if_ejercicios_new.ipynb
     #       children:
     #       - file: ejercicios/06_print_ejercicios_new.ipynb
     #     - file: docs_v1/07_input_new.ipynb
