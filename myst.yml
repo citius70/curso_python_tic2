@@ -62,30 +62,9 @@ project:
           children:
           - file: ./docs_v1/10_bucles_new.ipynb
           - file: ./ejercicios/10_bucles_ejercicios_new.ipynb
-    #       children:
-    #       - file: ejercicios/06_print_ejercicios_new.ipynb
-    #     - file: docs_v1/07_input_new.ipynb
-    #       children: 
-    #       - file: ejercicios/07_input_ejercicios_new.ipynb
-    #     - file: docs_v1/08_funciones_new.ipynb
-    #       children:
-    #       - file: ejercicios/08_funciones_ejercicios_new.ipynb
-    # - title: 3. Estructuras de control
-    #   children:
-    #     - file: docs_v1/08_estructurascontrol_new.ipynb
-    #     - title: 4.1. Condicionales     
-    #       children:
-    #       - file: docs_v1/09_if_new.ipynb
-    #         children:
-    #         - file: ejercicios/09_if_ejercicios_new.ipynb
-    #     - title: 4.2. Bucles
-    #       children:
-    #       - file: docs_v1/10_bucles_new.ipynb
-      #     - file: docs_v1/11_for_new.ipynb
-      #     - file: docs_v1/12_while_new.ipynb
-
-    #         - file: 11_0_for.ipynb
-    #         - file: 11_1_for_ejercicios.ipynb
+          children:
+         - file: ./docs_v1/11_for_new.ipynb
+         - file: 11_1_for_ejercicios.ipynb
     #         - file: 12_0_while.ipynb
     #         - file: 12_1_while_ejercicios.ipynb
 
