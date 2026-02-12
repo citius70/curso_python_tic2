@@ -58,8 +58,10 @@ project:
           children:
           - file: ./docs_v1/09_if_new.ipynb
           - file: ./ejercicios/09_if_ejercicios_new.ipynb
-    #      children:
-    #     - file: ./ejercicios/09_if_ejercicios_new.ipynb
+        - title: 3.3. Bucles
+          children:
+          - file: ./docs_v1/10_bucles_new.ipynb
+          - file: ./ejercicios/10_bucles_ejercicios_new.ipynb
     #       children:
     #       - file: ejercicios/06_print_ejercicios_new.ipynb
     #     - file: docs_v1/07_input_new.ipynb
