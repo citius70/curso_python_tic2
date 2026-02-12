@@ -64,7 +64,7 @@ project:
           - file: ./ejercicios/10_bucles_ejercicios_new.ipynb
           children:
          - file: ./docs_v1/11_for_new.ipynb
-         - file: 11_1_for_ejercicios.ipynb
+         - file: ./ejercicios/11_1_for_ejercicios.ipynb
     #         - file: 12_0_while.ipynb
     #         - file: 12_1_while_ejercicios.ipynb
 
