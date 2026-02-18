@@ -65,9 +65,10 @@ project:
             children:
             - file: ./docs_v1/11_for_new.ipynb
             - file: ./ejercicios/11_for_ejercicios_new.ipynb
-          # - file: ./ejercicios/11_1_for_ejercicios.ipynb
-    #         - file: 12_0_while.ipynb
-    #         - file: 12_1_while_ejercicios.ipynb
+          - title: 3.3.2. Bucles while
+            children:
+            - file: ./docs_v1/12_while_new.ipynb
+            - file: ./ejercicios/12_while_ejercicios_new.ipynb
 
     # - title: 5. Estructuras de datos
     #   children:
