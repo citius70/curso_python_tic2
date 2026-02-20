@@ -69,6 +69,20 @@ project:
             children:
             - file: ./docs_v1/12_while_new.ipynb
             - file: ./ejercicios/12_while_ejercicios_new.ipynb
+    - title: 4. Estructuras de datos
+      children:
+        - title: 4.1. Introducción a las estructuras de datos
+          children:
+          - file: ./docs_v1/13_estructurasdatos_new.ipynb
+        - title: 4.2. Listas
+          children:
+          - file: ./docs_v1/14_listas_new.ipynb
+          - file: ./ejercicios/14_listas_ejercicios_new.ipynb
+        # - title: 4.2. Diccionarios
+        #   children:
+        #   - file: ./docs_v1/14_diccionarios_new.ipynb
+        #   - file: ./ejercicios/14_diccionarios_ejercicios_new.ipynb
+
 
     # - title: 5. Estructuras de datos
     #   children:
