@@ -80,8 +80,8 @@ project:
           - file: ./ejercicios/14_listas_ejercicios_new.ipynb
         - title: 4.3. Diccionarios
           children:
-          - file: ./docs_v1/14_diccionarios_new.ipynb
-          - file: ./ejercicios/14_diccionarios_ejercicios_new.ipynb
+          - file: ./docs_v1/15_diccionarios_new.ipynb
+          - file: ./ejercicios/15_diccionarios_ejercicios_new.ipynb
 
 
     # - title: 5. Estructuras de datos
